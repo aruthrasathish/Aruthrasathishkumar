@@ -45,7 +45,7 @@ A deep learning system that predicts student academic risk and future performanc
 *Node.js · Socket.io · Kafka · Grok Whisper*  
 A multilingual, real-time voice Q&A system powered by **Grok Whisper**, **WebSockets**, and **translation APIs**.
 
-### 🔹 **Careerlens - Job Search Intelligence Platform**  
+### 🔹 **CareerLens - Job Search Intelligence Platform**  
 *FastAPI · JWT · Google OAuth · Chrome Manifest v3*  
 A full-stack platform that transforms job searching from tracking into intelligence + strategy.
 
