@@ -1,126 +1,243 @@
+<p align="center">
+  <img
+    width="100%"
+    src="https://capsule-render.vercel.app/api?type=waving&height=250&color=gradient&customColorList=6,11,20,24,30&text=Aruthra%20Sathish%20Kumar&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Software%20Engineer%20%E2%80%A2%20Distributed%20Systems%20%E2%80%A2%20Applied%20AI%2FML&descAlignY=58&descSize=18&animation=fadeIn"
+    alt="Aruthra Sathish Kumar"
+  />
+</p>
+
 <div align="center">
-
-# Aruthra Sathish Kumar
-
-### Software Engineer · Distributed Systems · Applied AI/ML
 
 <a href="https://git.io/typing-svg">
   <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=19&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=750&lines=Building+scalable+backend+systems;Engineering+distributed+applications;Building+AI-powered+software+systems;Working+with+LLMs%2C+embeddings+%26+ML+pipelines"
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2800&pause=900&color=8B5CF6&center=true&vCenter=true&width=780&lines=Building+scalable+backend+systems;Engineering+distributed+applications;Building+AI-powered+software+systems;Working+with+LLMs+%26+ML+pipelines;Software+%C3%97+Scale+%C3%97+Intelligence"
     alt="Typing SVG"
   />
 </a>
 
-<br/>
+<br/><br/>
 
-<a href="YOUR_LINKEDIN_URL">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-&nbsp;
+<img src="https://img.shields.io/badge/M.S._Information_Systems-George_Mason_University-6D28D9?style=flat-square" alt="MS Information Systems"/>
+<img src="https://img.shields.io/badge/GPA-3.97%2F4.00-7C3AED?style=flat-square" alt="GPA"/>
+<img src="https://img.shields.io/badge/Academic_Excellence-Award-8B5CF6?style=flat-square" alt="Academic Excellence Award"/>
+
+<br/><br/>
+
 <a href="YOUR_PORTFOLIO_URL">
-  <img src="https://img.shields.io/badge/Portfolio-Explore-111827?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/>
+  <img src="https://img.shields.io/badge/Portfolio-Explore-7C3AED?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
 </a>
 &nbsp;
-<a href="YOUR_RESUME_URL">
-  <img src="https://img.shields.io/badge/Resume-View-4F46E5?style=flat-square&logo=readthedocs&logoColor=white" alt="Resume"/>
+<a href="YOUR_LINKEDIN_URL">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-6366F1?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
 &nbsp;
 <a href="mailto:YOUR_EMAIL">
-  <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
+  <img src="https://img.shields.io/badge/Email-Contact-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
 </a>
+&nbsp;
+<a href="https://github.com/YOUR_GITHUB_USERNAME">
+  <img src="https://img.shields.io/badge/GitHub-Follow-A855F7?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+
+<br/><br/>
+
+<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=flat-square&color=7c3aed&label=PROFILE+VIEWS" alt="Profile Views"/>
+<img src="https://img.shields.io/github/followers/YOUR_GITHUB_USERNAME?label=Followers&style=flat-square&color=6366f1" alt="GitHub Followers"/>
+<img src="https://img.shields.io/github/stars/YOUR_GITHUB_USERNAME?affiliations=OWNER&style=flat-square&color=8b5cf6&label=Stars" alt="GitHub Stars"/>
 
 </div>
 
 ---
 
-## `> engineering_identity`
+## About Me
 
 > **The systems I find most interesting are the ones where software, scale, and intelligence collide.**
 
-I build software across **backend engineering, distributed systems, cloud infrastructure, and applied AI/ML** — from real-time event-driven applications and production-style APIs to LLM-powered retrieval systems and GPU-based machine learning workflows.
+I'm **Aruthra Sathish Kumar**, a Software Engineer working across **backend engineering, distributed systems, cloud infrastructure, and applied AI/ML**.
 
-My focus is not just getting software to work, but engineering systems that remain **fast, reliable, scalable, and understandable as complexity grows**.
+My work spans production-style APIs, event-driven architectures, real-time systems, distributed data pipelines, cloud-native infrastructure, LLM-powered applications, embeddings, transformers, and GPU-based machine learning workflows.
+
+I enjoy engineering systems where **software architecture and machine intelligence meet** — from Kafka-powered real-time applications and Kubernetes infrastructure to retrieval systems and multimodal ML research.
 
 ```text
-                    SOFTWARE ENGINEERING
-                            │
-                 ┌──────────┴──────────┐
-                 │                     │
-          DISTRIBUTED SYSTEMS       APPLIED AI / ML
-                 │                     │
-       Kafka · Flink · Redis      LLMs · PyTorch · RAG
-       APIs · WebSockets · K8s    LoRA · Embeddings · NLP
-                 │                     │
-                 └──────────┬──────────┘
-                            │
-                    INTELLIGENT SYSTEMS
+Software Engineering
+        │
+        ├── Backend Systems
+        │     ├── APIs
+        │     ├── Databases
+        │     └── Real-Time Systems
+        │
+        ├── Distributed Systems
+        │     ├── Kafka / Flink
+        │     ├── Redis
+        │     └── Cloud Infrastructure
+        │
+        └── Applied AI / ML
+              ├── LLMs
+              ├── RAG / Embeddings
+              ├── LoRA
+              └── PyTorch
 ```
+
+### Open To
+
+`Software Engineering` • `Backend Engineering` • `Distributed Systems` • `AI Engineering` • `ML Engineering`
 
 ---
 
-# Featured Engineering
+## Tech Stack
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Languages
 
-## ⚙️ WatchTower
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,java,ts,js,bash&theme=dark" alt="Languages"/>
+</p>
 
-**AI-Assisted Kubernetes Incident Response**
+<p align="center">
+  <code>Python</code>&nbsp;
+  <code>Java</code>&nbsp;
+  <code>TypeScript</code>&nbsp;
+  <code>JavaScript</code>&nbsp;
+  <code>SQL</code>&nbsp;
+  <code>Bash</code>
+</p>
 
-`AI × Infrastructure × Distributed Systems`
+### Frontend
 
-A production-style incident-response platform that brings operational signals together, ranks likely suspects, and supports controlled Kubernetes remediation.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css&theme=dark" alt="Frontend"/>
+</p>
 
-```text
-Operational Signals
-       │
-       ▼
-  12 MCP Tools
-       │
-       ▼
- Unified Event Store
-       │
-       ▼
-4-Signal Ranking
-       │
-       ▼
- AI Investigation
-       │
-       ▼
-Approval-Controlled
-K8s Remediation
-```
+### Backend & Databases
 
-**Engineering highlights**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=fastapi,django,nodejs,postgres,mysql,mongodb,redis&theme=dark" alt="Backend and Databases"/>
+</p>
 
-* Built **12 MCP tools across 4 operational data sources**
-* Designed a unified **PostgreSQL + TimescaleDB + pgvector** event store
-* Implemented multi-signal suspect ranking for incident investigation
-* Added **HMAC-SHA256 approval controls** around Kubernetes remediation
-* Reduced project-evaluation triage time by **83%**
+<p align="center">
+  <code>FastAPI</code>&nbsp;
+  <code>Django</code>&nbsp;
+  <code>Node.js</code>&nbsp;
+  <code>Fastify</code>&nbsp;
+  <code>REST APIs</code>&nbsp;
+  <code>GraphQL</code>&nbsp;
+  <code>WebSockets</code>&nbsp;
+  <code>Microservices</code>
+</p>
 
-**Stack**
+### Distributed Systems & Data
 
-`Python` · `MCP` · `Kubernetes` · `PostgreSQL` · `TimescaleDB` · `pgvector`
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=kafka,redis,postgres&theme=dark" alt="Distributed Systems"/>
+</p>
+
+<p align="center">
+  <code>Kafka</code>&nbsp;
+  <code>Flink</code>&nbsp;
+  <code>Redis</code>&nbsp;
+  <code>PostgreSQL</code>&nbsp;
+  <code>pgvector</code>&nbsp;
+  <code>Event-Driven Architecture</code>
+</p>
+
+### Cloud, DevOps & Tooling
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=aws,azure,gcp,docker,kubernetes,terraform,githubactions,linux,git,github&theme=dark" alt="Cloud and DevOps"/>
+</p>
+
+---
+
+## AI / ML Expertise
+
+<div align="center">
+
+| Domain                              |        Focus       | Details                                                             |
+| :---------------------------------- | :----------------: | :------------------------------------------------------------------ |
+| **LLM Systems**                     |       Applied      | LLM-powered applications, inference pipelines, structured reasoning |
+| **Retrieval-Augmented Generation**  |       Applied      | Embeddings, vector retrieval, FAISS, pgvector, context pipelines    |
+| **Deep Learning**                   | Research / Applied | PyTorch, transformer architectures, representation learning         |
+| **Parameter-Efficient Fine-Tuning** |      Research      | LoRA, frozen LLM experimentation                                    |
+| **NLP**                             | Research / Applied | Transformers, embeddings, classification, semantic representations  |
+| **Multimodal ML**                   |      Research      | Fusion architectures, cross-attention, contextual signals           |
+| **ML Systems**                      |       Applied      | GPU workflows, data pipelines, evaluation infrastructure            |
+| **Counterfactual Learning**         |      Research      | Counterfactual invariance and controlled experimental design        |
+
+</div>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=pytorch,python&theme=dark" alt="AI ML"/>
+</p>
+
+<p align="center">
+  <code>PyTorch</code>&nbsp;
+  <code>Transformers</code>&nbsp;
+  <code>LLMs</code>&nbsp;
+  <code>LoRA</code>&nbsp;
+  <code>RAG</code>&nbsp;
+  <code>Embeddings</code>&nbsp;
+  <code>NLP</code>&nbsp;
+  <code>Vector Search</code>
+</p>
+
+---
+
+## Featured Projects
+
+<details open>
+<summary><h3>⚙️ WatchTower — AI-Assisted Kubernetes Incident Response</h3></summary>
 
 <br/>
 
-<a href="YOUR_WATCHTOWER_REPOSITORY_URL">
-  <img src="https://img.shields.io/badge/Explore_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="WatchTower Repository"/>
-</a>
+> **AI × Infrastructure × Distributed Systems**
 
-</td>
+A production-style incident-response platform that brings operational signals together, ranks likely suspects, and supports approval-controlled Kubernetes remediation.
 
-<td width="50%" valign="top">
+```text
+Operational Signals
+        │
+        ▼
+   12 MCP Tools
+        │
+        ▼
+ Unified Event Store
+        │
+        ▼
+ 4-Signal Ranking
+        │
+        ▼
+ AI Investigation
+        │
+        ▼
+Approval Broker
+        │
+        ▼
+Kubernetes Remediation
+```
 
-## ⚡ SpeakUp
+| Engineering Dimension | Implementation                                                  |
+| :-------------------- | :-------------------------------------------------------------- |
+| **Stack**             | Python · MCP · Kubernetes · PostgreSQL · TimescaleDB · pgvector |
+| **Scale**             | 12 MCP tools integrating 4 operational data sources             |
+| **Architecture**      | Unified event store + multi-signal suspect ranking              |
+| **Safety**            | HMAC-SHA256 approval broker for Kubernetes remediation          |
+| **Impact**            | Reduced incident-triage time by 83% in project evaluation       |
+| **Repository**        | [View Repository →](YOUR_WATCHTOWER_REPOSITORY_URL)             |
 
-**Real-Time Anonymous Voice Q&A**
+**Engineering focus:** infrastructure automation, AI-assisted investigation, operational data integration, safe remediation, and distributed-system observability.
 
-`Real-Time Systems × Event-Driven Architecture`
+</details>
 
-A real-time platform for anonymous voice questions with asynchronous transcription, event-driven processing, and low-latency audience interaction.
+---
+
+<details open>
+<summary><h3>⚡ SpeakUp — Real-Time Anonymous Voice Q&A</h3></summary>
+
+<br/>
+
+> **Real-Time Systems × Event-Driven Architecture**
+
+A real-time voice Q&A platform combining asynchronous speech processing with Kafka, WebSockets, Redis, and PostgreSQL.
 
 ```text
 Voice Upload
@@ -129,52 +246,43 @@ Voice Upload
 202 Accepted
      │
      ▼
-    Kafka
+   Kafka
      │
-     ├────► Whisper
+     ├────────► Speech Transcription
      │
      ▼
- PostgreSQL
+PostgreSQL
      │
      ▼
 Redis + WebSockets
      │
      ▼
-Live Audience
+Live Clients
 ```
 
-**Engineering highlights**
+| Engineering Dimension | Implementation                                                             |
+| :-------------------- | :------------------------------------------------------------------------- |
+| **Stack**             | Next.js · Fastify · Kafka · WebSockets · PostgreSQL · Redis · Groq Whisper |
+| **Scale**             | 500+ simultaneous WebSocket connections                                    |
+| **Performance**       | Sub-100ms vote synchronization                                             |
+| **Data Integrity**    | PostgreSQL uniqueness controls + Redis rate limiting                       |
+| **AI**                | Speech transcription supporting 99+ languages                              |
+| **Repository**        | [View Repository →](YOUR_SPEAKUP_REPOSITORY_URL)                           |
 
-* Supported **500+ simultaneous WebSocket connections**
-* Built an asynchronous Kafka-based voice-processing pipeline
-* Integrated speech transcription across **99+ languages**
-* Achieved **sub-100ms vote synchronization**
-* Enforced vote integrity with PostgreSQL uniqueness constraints
-* Added Redis-backed rate limiting
+**Engineering focus:** event-driven processing, asynchronous workflows, real-time communication, concurrency, and low-latency synchronization.
 
-**Stack**
+</details>
 
-`Next.js` · `Fastify` · `Kafka` · `WebSockets` · `PostgreSQL` · `Redis` · `Whisper`
+---
+
+<details open>
+<summary><h3>🧠 USDA Rural Development AI Assistant</h3></summary>
 
 <br/>
 
-<a href="YOUR_SPEAKUP_REPOSITORY_URL">
-  <img src="https://img.shields.io/badge/Explore_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="SpeakUp Repository"/>
-</a>
+> **RAG × Retrieval Systems × LLM Engineering**
 
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-## 🧠 USDA AI Assistant
-
-**RAG for Rural Development Programs**
-
-`LLM Engineering × Retrieval Systems`
-
-An AI retrieval system for navigating USDA Rural Development programs using semantic search, vector retrieval, and GPU-backed LLM inference.
+An AI assistant for navigating USDA Rural Development programs using semantic retrieval, vector search, and GPU-backed LLM inference.
 
 ```text
 User Query
@@ -189,89 +297,77 @@ FAISS Retrieval
 Relevant Context
     │
     ▼
- Mistral 7B
+Mistral 7B
     │
     ▼
-Grounded Answer
+Grounded Response
 ```
 
-**Engineering highlights**
+| Engineering Dimension | Implementation                                              |
+| :-------------------- | :---------------------------------------------------------- |
+| **Stack**             | Python · FAISS · LlamaIndex · PostgreSQL · BGE · Mistral 7B |
+| **Knowledge Base**    | 176 federal programs                                        |
+| **Automation**        | Automated approximately 11+ hours of data collection        |
+| **Retrieval**         | BGE embeddings + FAISS IndexFlatL2                          |
+| **Performance**       | Reduced inference latency from ~90s to ~8s                  |
+| **Repository**        | [View Repository →](YOUR_USDA_REPOSITORY_URL)               |
 
-* Built a knowledge system covering **176 federal programs**
-* Automated approximately **11+ hours** of manual data collection
-* Implemented BGE embedding + FAISS vector retrieval
-* Reduced LLM inference latency from approximately **90s → 8s**
-* Integrated GPU-backed Mistral 7B inference
+**Engineering focus:** RAG architecture, semantic retrieval, vector search, GPU inference, and latency optimization.
 
-**Stack**
+</details>
 
-`Python` · `FAISS` · `LlamaIndex` · `PostgreSQL` · `BGE` · `Mistral 7B`
+---
+
+<details open>
+<summary><h3>🚀 CareerLens — Job Intelligence Platform</h3></summary>
 
 <br/>
 
-<a href="YOUR_USDA_REPOSITORY_URL">
-  <img src="https://img.shields.io/badge/Explore_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="USDA AI Repository"/>
-</a>
+> **Full-Stack Product Engineering × Backend Systems**
 
-</td>
-
-<td width="50%" valign="top">
-
-## 🚀 CareerLens
-
-**Job Intelligence Platform**
-
-`Backend Systems × Product Engineering`
-
-A full-stack job intelligence platform combining application tracking, authentication, browser-extension workflows, funnel analytics, and behavioral insights.
+A job intelligence platform combining application tracking, browser-extension workflows, authentication, funnel analytics, and behavioral insights.
 
 ```text
 Chrome Extension
        │
        ▼
- OAuth / JWT
+Google OAuth / JWT
        │
        ▼
- FastAPI
+    FastAPI
        │
-       ├────► Analytics
+       ├────────► Analytics
        │
        ▼
- PostgreSQL
+  PostgreSQL
        │
        ▼
 React Dashboard
 ```
 
-**Engineering highlights**
+| Engineering Dimension | Implementation                                                |
+| :-------------------- | :------------------------------------------------------------ |
+| **Stack**             | React · Tailwind · FastAPI · PostgreSQL · Google OAuth · JWT  |
+| **Backend**           | 21 REST endpoints                                             |
+| **Authentication**    | Cross-origin JWT synchronization                              |
+| **Analytics**         | Source-funnel application analytics                           |
+| **Impact**            | 7-day rolling burnout detector reduced false positives by 30% |
+| **Repository**        | [View Repository →](YOUR_CAREERLENS_REPOSITORY_URL)           |
 
-* Designed and implemented **21 REST endpoints**
-* Built Google OAuth + JWT authentication flows
-* Implemented cross-origin authentication synchronization
-* Created source-funnel application analytics
-* Built a 7-day rolling behavioral detector that reduced false positives by **30%**
+**Engineering focus:** API design, authentication, analytics, browser-to-backend integration, and production-style full-stack architecture.
 
-**Stack**
-
-`React` · `Tailwind CSS` · `FastAPI` · `PostgreSQL` · `OAuth` · `JWT` · `Chrome Extension`
-
-<br/>
-
-<a href="YOUR_CAREERLENS_REPOSITORY_URL">
-  <img src="https://img.shields.io/badge/Explore_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="CareerLens Repository"/>
-</a>
-
-</td>
-</tr>
-</table>
+</details>
 
 ---
 
-## 🔎 Real-Time Search Ranking System
+<details open>
+<summary><h3>🔎 Real-Time Search Ranking System</h3></summary>
 
-`Streaming Systems × Ranking × Low-Latency Architecture`
+<br/>
 
-A production-style search-ranking system exploring how streaming signals, low-latency state, and ranking logic can be combined in a distributed architecture.
+> **Streaming Systems × Ranking × Low-Latency Architecture**
+
+A production-style ranking system exploring streaming signals, real-time state, and low-latency ranking in a distributed architecture.
 
 ```text
 Events
@@ -282,287 +378,295 @@ Kafka
   ▼
 Flink Processing
   │
-  ├──────────────► Feature / Ranking Pipeline
+  ├────────► Ranking Pipeline
   │
   ▼
 Redis State
   │
   ▼
-Low-Latency Ranking
+Low-Latency Results
 ```
 
-**Core engineering areas**
+| Engineering Dimension | Implementation                                          |
+| :-------------------- | :------------------------------------------------------ |
+| **Stack**             | Kafka · Flink · Redis                                   |
+| **Architecture**      | Event-driven distributed processing                     |
+| **Processing**        | Streaming data pipeline                                 |
+| **Serving**           | Low-latency state and ranking                           |
+| **Focus**             | Distributed systems · streaming · ranking               |
+| **Repository**        | [View Repository →](YOUR_SEARCH_RANKING_REPOSITORY_URL) |
 
-`Kafka` · `Flink` · `Redis` · `Streaming` · `Ranking Systems` · `Event-Driven Architecture`
-
-<a href="YOUR_SEARCH_RANKING_REPOSITORY_URL">
-  <img src="https://img.shields.io/badge/Explore_Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Search Ranking Repository"/>
-</a>
-
----
-
-# 🔬 Active Research
-
-### American University · AI/ML Research
-
-## CAM-Soft
-
-**Scalable Multimodal Fusion for Soft Hate Speech Detection via Camouflaged-Implicature Modeling and Counterfactual Invariance**
-
-I am currently working on research exploring how **literal meaning, implicature, contextual signals, and representation learning** can be combined to better model subtle forms of online hate speech.
-
-```mermaid
-flowchart LR
-    A["Data"] --> B["Representation"]
-    B --> C["Literal Path"]
-    B --> D["Implicature Path"]
-    C --> E["Semantic–Pragmatic Gap"]
-    D --> E
-    E --> F["Gated Fusion"]
-    F --> G["Prediction"]
-```
-
-### Research engineering
-
-`PyTorch` · `LLMs` · `LoRA` · `Transformer Embeddings` · `Multimodal Learning` · `NLP`
-
-`Cross-Dataset Evaluation` · `Counterfactual Learning` · `Cross-Attention` · `GPU Workflows`
-
-Current work includes:
-
-* Building scalable NLP and dataset-processing pipelines across multiple hate-speech datasets
-* Experimenting with **8B-class LLMs**, transformer embeddings, and parameter-efficient adaptation
-* Modeling literal and implicature-oriented representations
-* Exploring gated cross-attention and semantic-pragmatic fusion
-* Designing cross-dataset experiments and counterfactual learning components
-* Running ML experimentation across GPU-backed environments
+</details>
 
 ---
 
-# Systems I Build With
+## Engineering Experience
 
-### Languages
-
-<p>
-<img src="https://skillicons.dev/icons?i=python,java,ts,js,bash" alt="Programming languages"/>
-</p>
-
-`Python` · `Java` · `TypeScript` · `JavaScript` · `SQL` · `Bash`
-
-### Backend & APIs
-
-<p>
-<img src="https://skillicons.dev/icons?i=fastapi,django,nodejs" alt="Backend technologies"/>
-</p>
-
-`FastAPI` · `Django` · `Node.js` · `Fastify` · `REST APIs` · `GraphQL` · `WebSockets` · `Microservices`
-
-### AI / Machine Learning
-
-<p>
-<img src="https://skillicons.dev/icons?i=pytorch" alt="AI ML technologies"/>
-</p>
-
-`PyTorch` · `Transformers` · `LLMs` · `LoRA` · `RAG` · `Embeddings` · `NLP` · `Vector Search`
-
-### Distributed Systems & Data
-
-<p>
-<img src="https://skillicons.dev/icons?i=kafka,postgres,mysql,mongodb,redis" alt="Data and distributed systems technologies"/>
-</p>
-
-`Kafka` · `Flink` · `PostgreSQL` · `MySQL` · `MongoDB` · `Redis` · `pgvector`
-
-### Cloud & Infrastructure
-
-<p>
-<img src="https://skillicons.dev/icons?i=aws,azure,gcp,docker,kubernetes,terraform,githubactions,linux" alt="Cloud and infrastructure technologies"/>
-</p>
-
-`AWS` · `Azure` · `GCP` · `Docker` · `Kubernetes` · `Terraform` · `GitHub Actions` · `Linux`
-
-### Systems
-
-`Distributed Systems` · `Event-Driven Architecture` · `Data Pipelines` · `Concurrency` · `Caching`
-
-`Fault Tolerance` · `Scalability` · `Query Optimization` · `Batch & Stream Processing`
-
----
-
-# Engineering Experience
-
-<table>
-<tr>
-<td width="24%" valign="top">
-
-### American University
+### 🧠 AI/ML Research — American University
 
 **2026 — Present**
 
-</td>
+Working on research engineering across multimodal machine learning, LLM experimentation, NLP pipelines, transformer embeddings, LoRA, PyTorch, cross-dataset evaluation, and GPU-based experimentation.
 
-<td valign="top">
+**Current research: CAM-Soft**
 
-### AI/ML Research
+> *Scalable Multimodal Fusion for Soft Hate Speech Detection via Camouflaged-Implicature Modeling and Counterfactual Invariance*
 
-Research engineering across multimodal ML, LLM experimentation, PyTorch, LoRA, transformer embeddings, NLP pipelines, cross-dataset evaluation, and GPU-backed experimentation.
+**Scope**
 
-</td>
-</tr>
+* Building scalable NLP and dataset-processing pipelines
+* Working with 8B-class LLMs and transformer embeddings
+* Exploring parameter-efficient adaptation with LoRA
+* Modeling literal and implicature-oriented representations
+* Developing gated cross-attention and fusion components
+* Designing cross-dataset and counterfactual experiments
+* Running GPU-backed ML experimentation
 
-<tr>
-<td width="24%" valign="top">
+`Python` `PyTorch` `Transformers` `LLMs` `LoRA` `NLP` `Embeddings` `GPU Computing`
 
-### George Mason University
+---
 
-**2025 — 2026**
+### 💻 Graduate Teaching Assistant — George Mason University
 
-</td>
+**Server-Side Development · 2025 — 2026**
 
-<td valign="top">
+Supported **100+ students** across backend software development and database engineering.
 
-### Graduate Teaching Assistant · Server-Side Development
+**Scope**
 
-Supported **100+ students** working with Node.js, Express/Fastify, REST APIs, asynchronous backend workflows, MySQL, schema design, query optimization, and debugging.
+* Node.js and server-side application development
+* Express / Fastify backend architectures
+* REST API development
+* Asynchronous programming workflows
+* MySQL schema design and query optimization
+* Backend debugging and performance analysis
+* Conducted 25+ technical workshops
 
-</td>
-</tr>
+`Node.js` `Express` `Fastify` `REST APIs` `MySQL` `JavaScript` `Backend Engineering`
 
-<tr>
-<td width="24%" valign="top">
+---
 
-### Verzeo
+### ⚙️ Software Engineering Intern — Verzeo
 
 **2022 — 2023**
 
-</td>
+Worked on an e-learning platform across frontend, backend, authentication, API design, and database performance.
 
-<td valign="top">
+**Scope**
 
-### Software Engineering Intern
+* React + Django application development
+* Django REST Framework API engineering
+* Authentication and session workflows
+* Relational database normalization
+* Query and API data-access optimization
+* Cursor-based pagination
+* Reduced authentication-related tickets by **45%**
+* Reduced database round-trips by **60%**
+* Improved heavy-query latency by **35%**
 
-Worked across React, Django, Django REST Framework, authentication, relational data modeling, API data-access optimization, pagination, and database performance.
-
-</td>
-</tr>
-</table>
-
----
-
-# Engineering Principles
-
-<table>
-<tr>
-<td align="center" width="20%">
-
-### Scale
-
-Design for growth without making everything distributed before it needs to be.
-
-</td>
-<td align="center" width="20%">
-
-### Reliability
-
-Treat failure, recovery, and operational safety as part of the architecture.
-
-</td>
-<td align="center" width="20%">
-
-### Performance
-
-Measure bottlenecks before optimizing them.
-
-</td>
-<td align="center" width="20%">
-
-### Intelligence
-
-Use ML where it creates meaningful system or product capability.
-
-</td>
-<td align="center" width="20%">
-
-### Simplicity
-
-Complexity should earn its place.
-
-</td>
-</tr>
-</table>
+`React` `Django` `Django REST Framework` `REST APIs` `SQL` `Database Optimization`
 
 ---
 
-# Education & Recognition
+## Achievements
 
-<table>
-<tr>
-<td>
+<div align="center">
 
-### 🎓 George Mason University
+|              Recognition              | Details                                                            |
+| :-----------------------------------: | :----------------------------------------------------------------- |
+|    🏅 **Academic Excellence Award**   | Information Sciences & Technology · George Mason University · 2026 |
+|    🎓 **M.S. Information Systems**    | George Mason University · GPA **3.97 / 4.00**                      |
+| 👩‍🏫 **Graduate Teaching Assistant** | Supported 100+ students in Server-Side Development                 |
+|         🔬 **AI/ML Research**         | Research engineering at American University                        |
 
-**Master of Science in Information Systems**
-
-`GPA 3.97 / 4.00` · `2026`
-
-</td>
-
-<td>
-
-### 🏅 Academic Excellence Award
-
-**Information Sciences & Technology**
-
-George Mason University · 2026
-
-</td>
-</tr>
-</table>
+</div>
 
 ---
 
-# What I'm Exploring
+## Certifications
 
-```text
-backend/
-├── distributed-systems
-├── event-driven-architecture
-├── high-performance-apis
-└── cloud-infrastructure
+<div align="center">
 
-ai-ml/
-├── llm-systems
-├── retrieval-augmented-generation
-├── transformer-embeddings
-├── parameter-efficient-finetuning
-└── multimodal-learning
+<!-- Add only certifications that belong to Aruthra Sathish Kumar. -->
 
-intersection/
-└── intelligent-systems-that-work-in-the-real-world
+**No unrelated cybersecurity or penetration-testing certifications are listed here.**
+
+</div>
+
+---
+
+## Coding Profiles
+
+<div align="center">
+
+<a href="YOUR_LEETCODE_URL">
+  <img src="https://img.shields.io/badge/LeetCode-Profile-7C3AED?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/>
+</a>
+&nbsp;
+<a href="YOUR_HACKERRANK_URL">
+  <img src="https://img.shields.io/badge/HackerRank-Profile-6366F1?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank"/>
+</a>
+
+</div>
+
+---
+
+## GitHub Analytics
+
+<div align="center">
+
+<img
+width="49%"
+src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=0D1117&title_color=8B5CF6&icon_color=A855F7&text_color=C9D1D9&ring_color=7C3AED"
+alt="GitHub Stats"
+/>
+
+<img
+width="49%"
+src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=transparent&hide_border=true&background=0D1117&ring=8B5CF6&fire=A855F7&currStreakLabel=8B5CF6&sideLabels=C9D1D9&dates=8B949E"
+alt="GitHub Streak"
+/>
+
+<br/>
+
+<img
+width="45%"
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=0D1117&title_color=8B5CF6&text_color=C9D1D9"
+alt="Top Languages"
+/>
+
+</div>
+
+---
+
+## GitHub Trophies
+
+<div align="center">
+
+<img
+src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=discord&no-frame=true&no-bg=true&margin-w=8&column=6"
+alt="GitHub Trophies"
+/>
+
+</div>
+
+---
+
+## Contribution Activity
+
+<div align="center">
+
+<img
+src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&bg_color=0D1117&color=A78BFA&line=8B5CF6&point=C4B5FD&area=true&hide_border=true"
+width="100%"
+alt="Contribution Graph"
+/>
+
+</div>
+
+---
+
+## Contribution Snake
+
+<div align="center">
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake-dark.svg"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake.svg"
+  />
+  <img
+    alt="GitHub contribution snake"
+    src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-contribution-grid-snake.svg"
+  />
+</picture>
+
+</div>
+
+---
+
+## Current Focus
+
+```yaml
+aruthra:
+  building:
+    - scalable backend systems
+    - distributed applications
+    - AI-powered software systems
+
+  researching:
+    - multimodal machine learning
+    - LLM systems
+    - transformer embeddings
+    - LoRA
+    - counterfactual learning
+
+  exploring:
+    - distributed systems
+    - cloud infrastructure
+    - real-time architectures
+    - ML systems
+    - retrieval and ranking systems
+
+  engineering_principles:
+    scale: "Design systems that continue working as traffic and data grow."
+    reliability: "Treat failure and recovery as part of the architecture."
+    performance: "Measure bottlenecks before optimizing."
+    intelligence: "Use ML where it creates meaningful capability."
+    simplicity: "Complexity should earn its place."
+
+  open_to:
+    - Software Engineering
+    - Backend Engineering
+    - Distributed Systems
+    - AI Engineering
+    - Machine Learning Engineering
 ```
 
 ---
 
+## Connect
+
 <div align="center">
 
-## Let's Connect
+### Let's build systems that scale — and intelligence that matters.
 
-I'm interested in engineering problems across **backend systems, distributed computing, cloud infrastructure, AI engineering, and applied machine learning**.
+<br/>
 
+<a href="mailto:YOUR_EMAIL">
+  <img src="https://img.shields.io/badge/Gmail-Contact_Me-8B5CF6?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+&nbsp;
 <a href="YOUR_LINKEDIN_URL">
-  <img src="https://img.shields.io/badge/LinkedIn-Aruthra_Sathish_Kumar-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  <img src="https://img.shields.io/badge/LinkedIn-Let's_Connect-6366F1?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+&nbsp;
+<a href="https://github.com/YOUR_GITHUB_USERNAME">
+  <img src="https://img.shields.io/badge/GitHub-Explore_My_Work-7C3AED?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 &nbsp;
 <a href="YOUR_PORTFOLIO_URL">
-  <img src="https://img.shields.io/badge/Portfolio-View_Work-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
-</a>
-&nbsp;
-<a href="mailto:YOUR_EMAIL">
-  <img src="https://img.shields.io/badge/Email-Get_In_Touch-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  <img src="https://img.shields.io/badge/Portfolio-View_Portfolio-A855F7?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/>
 </a>
 
 <br/><br/>
 
-<sub>Software Engineering · Distributed Systems · Applied AI/ML</sub>
+**Software Engineering · Distributed Systems · Cloud Infrastructure · Applied AI/ML**
+
+<br/>
+
+*"Build systems that are understandable at small scale, dependable at large scale, and intelligent where it matters."*
 
 </div>
+
+<p align="center">
+  <img
+    width="100%"
+    src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=gradient&customColorList=6,11,20,24,30"
+    alt="Footer"
+  />
+</p>
