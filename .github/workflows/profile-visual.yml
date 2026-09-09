@@ -1,9 +1,7 @@
-name: Refresh profile visual
+name: Build profile banner
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '23 6 * * 1'
   push:
     branches: [main]
     paths:
@@ -18,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  refresh:
+  build:
     if: github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-24.04
     timeout-minutes: 5
@@ -29,36 +27,10 @@ jobs:
         with:
           ref: ${{ github.event.repository.default_branch }}
 
-      - name: Create initial visuals if missing
-        shell: bash
-        run: |
-          set -euo pipefail
-          for file in \
-            assets/system-flow-light.svg \
-            assets/system-flow-dark.svg \
-            assets/system-flow-mobile-light.svg \
-            assets/system-flow-mobile-dark.svg
-          do
-            if [ ! -f "$file" ]; then
-              python3 scripts/build_visual.py
-              break
-            fi
-          done
+      - name: Generate light, dark, and mobile banners
+        run: python3 scripts/build_visual.py
 
-      - name: Fetch contribution data and refresh visuals
-        id: activity
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PROFILE_OWNER: ${{ github.repository_owner }}
-        run: python3 scripts/build_visual.py --fetch
-
-      - name: Report unavailable contribution data
-        if: steps.activity.outcome == 'failure'
-        run: |
-          echo "::warning::Contribution refresh failed. Existing visuals are preserved; initial visuals contain no invented activity."
-
-      - name: Commit generated assets
+      - name: Commit updated banners
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         shell: bash
@@ -74,13 +46,9 @@ jobs:
             assets/system-flow-mobile-light.svg \
             assets/system-flow-mobile-dark.svg
 
-          if [ -f assets/activity.json ]; then
-            git add assets/activity.json
-          fi
-
           if git diff --cached --quiet; then
             exit 0
           fi
 
-          git commit -m 'Refresh profile visual and contribution snapshot'
+          git commit -m 'Update custom profile banner'
           git push origin "HEAD:$DEFAULT_BRANCH"
