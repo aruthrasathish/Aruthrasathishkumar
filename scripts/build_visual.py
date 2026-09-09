@@ -34,7 +34,7 @@ def render(dark=False, mobile=False):
     )
 
     c = colors
-    width, height = (480, 390) if mobile else (960, 300)
+    width, height = (480, 390) if mobile else (960, 230)
     parts = [
         (
             '<svg xmlns="http://www.w3.org/2000/svg" '
@@ -135,8 +135,54 @@ def render(dark=False, mobile=False):
         node(191, 291, "SYSTEMS", c["blue"])
         node(354, 291, "INFERENCE", c["teal"])
 
-    else:
-        # Restrained visual field behind the topology.
+        else:
+            # Compact desktop identity with an abstract systems topology.
+            parts.append(
+                f'<circle cx="789" cy="112" r="92" '
+                f'fill="{c["wash"]}" opacity="0.65"/>'
+            )
+            for x in range(608, 925, 24):
+                for y in range(30, 205, 24):
+                    parts.append(
+                        f'<circle cx="{x}" cy="{y}" r="1" '
+                        f'fill="{c["line"]}" opacity="0.6"/>'
+                    )
+            text(
+                36, 34, "SYSTEMS / SCALE / INTELLIGENCE",
+                10, c["blue"], 600, 1.4, True,
+            )
+
+        text(36, 86, "Aruthra Sathish Kumar", 36, weight=700)
+        line("M36 106H88", c["teal"], 3)
+
+        text(36, 142, "Software Engineer", 23, weight=600)
+        text(
+            36, 174, "Backend & Distributed Systems",
+            15, c["muted"],
+        )
+        text(36, 198, "Applied AI / ML", 15, c["muted"])
+
+        route_a = "M688 60H745Q765 60 765 80V95"
+        route_b = "M765 135V156Q765 172 781 172H820"
+        route_c = "M590 60H575Q561 60 561 74V158Q561 172 575 172H820"
+        route_d = "M814 115H894Q908 115 908 101V74Q908 60 894 60H688"
+
+        for route in (route_a, route_b, route_c, route_d):
+            line(route, c["line"], 1.5)
+
+        line(route_a, c["blue"], 2, 'class="packet"')
+        line(route_b, c["teal"], 2, 'class="packet reverse"')
+        line(route_c, c["teal"], 2, 'class="packet"')
+        line(route_d, c["blue"], 2, 'class="packet reverse"')
+
+        node(590, 40, "EVENTS", c["blue"])
+        node(716, 95, "SYSTEMS", c["blue"])
+        node(820, 152, "INFERENCE", c["teal"])
+
+        text(
+            626, 214, "BUILD / CONNECT / REASON",
+            9, c["muted"], 500, 1.4, True,
+        )
         parts.append(
             f'<circle cx="789" cy="145" r="116" '
             f'fill="{c["wash"]}" opacity="0.65"/>'
