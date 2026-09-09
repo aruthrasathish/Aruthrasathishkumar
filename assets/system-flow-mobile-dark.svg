@@ -1,85 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 426" width="420" height="426" role="img" aria-labelledby="title desc">
-<title id="title">Systems + Scale + Intelligence</title>
-<desc id="desc">Illustrative distributed ranking and retrieval-augmented generation flows. Contribution data, when present, is a separate weekly GitHub snapshot.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 390" width="480" height="390" role="img" aria-labelledby="title description">
+<title id="title">Aruthra Sathish Kumar — Software Engineer</title>
+<desc id="description">Backend and distributed systems. Applied AI and machine learning. An abstract animated topology connects events, systems, and inference.</desc>
 
         <style>
           text {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", Arial, sans-serif;
+          }
+          .mono {
+            font-family: "SFMono-Regular", Consolas,
+                         "Liberation Mono", monospace;
           }
           .packet {
-            stroke-dasharray: 4 28;
-            animation: flow 3s linear infinite;
+            stroke-dasharray: 6 95;
+            animation: travel 7s linear infinite;
           }
-          @keyframes flow {
-            to { stroke-dashoffset: -32; }
+          .reverse {
+            animation-direction: reverse;
+            animation-delay: -3s;
+          }
+          @keyframes travel {
+            to { stroke-dashoffset: -202; }
           }
           @media (prefers-reduced-motion: reduce) {
-            .packet {
-              animation: none;
-              display: none;
-            }
+            .packet { animation: none; display: none; }
           }
         </style>
         
-<rect x="0.5" y="0.5" width="419" height="425" rx="12" fill="#0d1117" stroke="#30363d"/>
-<text x="24" y="31" fill="#e6edf3" font-size="14" font-weight="700">SYSTEMS + SCALE + INTELLIGENCE</text>
-<text x="24" y="52" fill="#9da7b3" font-size="11" font-weight="400">Illustrative flows / motion is not live telemetry</text>
-<text x="24" y="79" fill="#79b8ff" font-size="10" font-weight="700">DISTRIBUTED SYSTEMS</text>
-<rect x="24" y="91" width="174" height="48" rx="6" fill="#161b22" stroke="#30363d"/>
-<rect x="24" y="101" width="3" height="28" rx="1" fill="#79b8ff"/>
-<text x="38" y="111" fill="#e6edf3" font-size="15" font-weight="700">Kafka</text>
-<text x="38" y="128" fill="#9da7b3" font-size="11" font-weight="400">Clickstream events</text>
-<path d="M111.0 140v17" stroke="#30363d" fill="none"/>
-<path class="packet" d="M111.0 140v17" stroke="#79b8ff" stroke-width="2" fill="none"/>
-<path d="M108.0 153l3 4 3 -4" stroke="#79b8ff" fill="none"/>
-<rect x="24" y="158" width="174" height="48" rx="6" fill="#161b22" stroke="#30363d"/>
-<rect x="24" y="168" width="3" height="28" rx="1" fill="#79b8ff"/>
-<text x="38" y="178" fill="#e6edf3" font-size="15" font-weight="700">Flink</text>
-<text x="38" y="195" fill="#9da7b3" font-size="11" font-weight="400">Stream ranking</text>
-<path d="M111.0 207v17" stroke="#30363d" fill="none"/>
-<path class="packet" d="M111.0 207v17" stroke="#79b8ff" stroke-width="2" fill="none"/>
-<path d="M108.0 220l3 4 3 -4" stroke="#79b8ff" fill="none"/>
-<rect x="24" y="225" width="174" height="48" rx="6" fill="#161b22" stroke="#30363d"/>
-<rect x="24" y="235" width="3" height="28" rx="1" fill="#79b8ff"/>
-<text x="38" y="245" fill="#e6edf3" font-size="15" font-weight="700">Redis + API</text>
-<text x="38" y="262" fill="#9da7b3" font-size="11" font-weight="400">Low-latency serving</text>
-<text x="222" y="79" fill="#6ed7c5" font-size="10" font-weight="700">APPLIED AI</text>
-<rect x="222" y="91" width="174" height="48" rx="6" fill="#161b22" stroke="#30363d"/>
-<rect x="222" y="101" width="3" height="28" rx="1" fill="#6ed7c5"/>
-<text x="236" y="111" fill="#e6edf3" font-size="15" font-weight="700">BGE</text>
-<text x="236" y="128" fill="#9da7b3" font-size="11" font-weight="400">Embed input</text>
-<path d="M309.0 140v17" stroke="#30363d" fill="none"/>
-<path class="packet" d="M309.0 140v17" stroke="#6ed7c5" stroke-width="2" fill="none"/>
-<path d="M306.0 153l3 4 3 -4" stroke="#6ed7c5" fill="none"/>
-<rect x="222" y="158" width="174" height="48" rx="6" fill="#161b22" stroke="#30363d"/>
-<rect x="222" y="168" width="3" height="28" rx="1" fill="#6ed7c5"/>
-<text x="236" y="178" fill="#e6edf3" font-size="15" font-weight="700">FAISS</text>
-<text x="236" y="195" fill="#9da7b3" font-size="11" font-weight="400">Retrieve context</text>
-<path d="M309.0 207v17" stroke="#30363d" fill="none"/>
-<path class="packet" d="M309.0 207v17" stroke="#6ed7c5" stroke-width="2" fill="none"/>
-<path d="M306.0 220l3 4 3 -4" stroke="#6ed7c5" fill="none"/>
-<rect x="222" y="225" width="174" height="48" rx="6" fill="#161b22" stroke="#30363d"/>
-<rect x="222" y="235" width="3" height="28" rx="1" fill="#6ed7c5"/>
-<text x="236" y="245" fill="#e6edf3" font-size="15" font-weight="700">Mistral 7B</text>
-<text x="236" y="262" fill="#9da7b3" font-size="11" font-weight="400">Generate response</text>
-<path d="M24 285H396" stroke="#30363d"/>
-<text x="24" y="304" fill="#9da7b3" font-size="10" font-weight="700">GITHUB CONTRIBUTIONS / 12 COMPLETE WEEKS</text>
-<path d="M24 361h23" stroke="#30363d"/>
-<rect x="24" y="345.00" width="23" height="16.00" rx="2" fill="#6ed7c5"><title>Week 1: 3 contributions</title></rect>
-<path d="M54 361h23" stroke="#30363d"/>
-<rect x="54" y="329.00" width="23" height="32.00" rx="2" fill="#6ed7c5"><title>Week 2: 6 contributions</title></rect>
-<path d="M84 361h23" stroke="#30363d"/>
-<rect x="84" y="334.33" width="23" height="26.67" rx="2" fill="#6ed7c5"><title>Week 3: 5 contributions</title></rect>
-<path d="M114 361h23" stroke="#30363d"/>
-<rect x="114" y="355.67" width="23" height="5.33" rx="2" fill="#6ed7c5"><title>Week 4: 1 contributions</title></rect>
-<path d="M144 361h23" stroke="#30363d"/>
-<path d="M174 361h23" stroke="#30363d"/>
-<path d="M204 361h23" stroke="#30363d"/>
-<path d="M234 361h23" stroke="#30363d"/>
-<path d="M264 361h23" stroke="#30363d"/>
-<path d="M294 361h23" stroke="#30363d"/>
-<path d="M324 361h23" stroke="#30363d"/>
-<path d="M354 361h23" stroke="#30363d"/>
-<text x="24" y="382" fill="#e6edf3" font-size="11" font-weight="400">2026-06-15 to 2026-09-06 / 15 total</text>
-<text x="24" y="403" fill="#9da7b3" font-size="10" font-weight="400">Updated 2026-09-09 UTC / peak 6/wk / counts, not impact</text>
+<rect x="1" y="1" width="478" height="388" rx="18" fill="#0d1117" stroke="#29384a"/>
+<text x="28" y="36" font-size="10" fill="#8cbcff" font-weight="600" letter-spacing="1.2" class="mono">SYSTEMS / SCALE / INTELLIGENCE</text>
+<text x="28" y="91" font-size="43" fill="#edf3fa" font-weight="700">Aruthra</text>
+<text x="28" y="138" font-size="43" fill="#edf3fa" font-weight="700">Sathish Kumar</text>
+<path d="M28 160H83" fill="none" stroke="#78decb" stroke-width="3" stroke-linecap="round" />
+<text x="28" y="194" font-size="21" fill="#edf3fa" font-weight="600">Software Engineer</text>
+<text x="28" y="224" font-size="14" fill="#a3b1c2" font-weight="400">Backend &amp; Distributed Systems</text>
+<text x="28" y="247" font-size="14" fill="#a3b1c2" font-weight="400">Applied AI / ML</text>
+<path d="M126 311H191M289 311H354" fill="none" stroke="#29384a" stroke-width="1.5" stroke-linecap="round" />
+<path d="M77 331V348Q77 358 87 358H393Q403 358 403 348V331" fill="none" stroke="#29384a" stroke-width="1.5" stroke-linecap="round" />
+<path d="M126 311H191M289 311H354" fill="none" stroke="#8cbcff" stroke-width="2" stroke-linecap="round" class="packet"/>
+<path d="M77 331V348Q77 358 87 358H393Q403 358 403 348V331" fill="none" stroke="#78decb" stroke-width="2" stroke-linecap="round" class="packet reverse"/>
+<rect x="28" y="291" width="98" height="40" rx="9" fill="#131e2c" stroke="#29384a"/>
+<circle cx="42" cy="311" r="3" fill="#8cbcff"/>
+<text x="53" y="315" font-size="10" fill="#edf3fa" font-weight="600" class="mono">EVENTS</text>
+<rect x="191" y="291" width="98" height="40" rx="9" fill="#131e2c" stroke="#29384a"/>
+<circle cx="205" cy="311" r="3" fill="#8cbcff"/>
+<text x="216" y="315" font-size="10" fill="#edf3fa" font-weight="600" class="mono">SYSTEMS</text>
+<rect x="354" y="291" width="98" height="40" rx="9" fill="#131e2c" stroke="#29384a"/>
+<circle cx="368" cy="311" r="3" fill="#78decb"/>
+<text x="379" y="315" font-size="10" fill="#edf3fa" font-weight="600" class="mono">INFERENCE</text>
 </svg>
