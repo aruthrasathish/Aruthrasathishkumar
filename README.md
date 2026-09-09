@@ -1,93 +1,95 @@
-## Aruthra Sathish Kumar
-
-**Software Engineer · Backend & Distributed Systems · Applied AI/ML**
-
-I build scalable backend systems, real-time infrastructure, and intelligent applications.
-
-[LinkedIn](https://www.linkedin.com/in/aruthrasathish/) · [Email](mailto:aruthra.sathish@gmail.com)
-
-AI/ML Research @ **American University** · M.S. @ **George Mason University** · **Academic Excellence Award**
-
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/system-flow-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/system-flow-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/system-flow-dark.svg">
-  <img src="assets/system-flow-light.svg" alt="Distributed systems and applied AI: Kafka to Flink to Redis and API; BGE embeddings to FAISS retrieval to Mistral generation. Illustrative flows with a separate GitHub contribution snapshot." width="840">
+  <img src="assets/system-flow-light.svg" width="960" alt="Aruthra Sathish Kumar — Software Engineer. Backend and Distributed Systems. Applied AI / ML.">
 </picture>
 
-## Featured systems
+<br>
 
-### [WatchTower — incident investigation with controlled remediation](https://github.com/aruthrasathish/Watchtower-MCP-server-for-incident-response)
+I build backend systems, real-time infrastructure, and applications powered by machine learning.
 
-Connects operational evidence to AI-assisted investigation through **12 MCP tools across 4 data sources**. Combines suspect ranking with an **HMAC-SHA256 approval broker** for Kubernetes remediation.
+**Currently:** AI/ML research at American University, working with 8B language models, embeddings, and cross-dataset evaluation.
 
-`Evidence → investigation → suspect ranking → approval → remediation`
+[LinkedIn](https://www.linkedin.com/in/aruthra-sathish-kumar369/) · [Email](mailto:aruthra.sathish@gmail.com) · [Explore repositories](https://github.com/aruthrasathish?tab=repositories)
 
-**Result:** approximately **83% less triage time in simulated incidents**.<br>
-**Built with:** Python · MCP · Kubernetes · PostgreSQL · TimescaleDB · pgvector
+## Selected engineering
 
-### [Real-Time Search Ranking — from clickstream to serving](https://github.com/aruthrasathish/Real-time-Search-Ranking-System)
+### 01 / WatchTower
+**AI-assisted incident response. Approval-gated remediation.**
 
-Processes clickstream events with **Kafka and Apache Flink**, aggregates clicks in **30-second windows**, stores rankings in **Redis sorted sets**, and serves results through **Node.js**. Connects asynchronous stream processing to low-latency request handling.
+Investigates operational incidents through **12 MCP tools across 4 data sources**. Suspect ranking connects collected evidence to Kubernetes remediation protected by an **HMAC-SHA256 approval broker**.
 
-`Clickstream → Kafka → Flink → Redis → Node.js API`
+**~83% less triage time in simulated incidents.**
 
-**Focus:** deterministic click-based ranking, tiered caching, and low-latency serving.<br>
-**Built with:** Kafka · Apache Flink · Redis · Node.js
+`Python` `MCP` `Kubernetes` `PostgreSQL` `TimescaleDB` `pgvector`
 
-### [USDA AI Assistant — retrieval with faster GPU inference](https://github.com/aruthrasathish/usda-chatbot)
+[Explore WatchTower →](https://github.com/aruthrasathish/Watchtower-MCP-server-for-incident-response)
 
-Makes **176 federal programs** searchable through a RAG pipeline using **BGE embeddings, FAISS retrieval, and Mistral 7B**. Automates program-data collection and connects retrieval to GPU-backed generation.
+---
 
-**Result:** response latency reduced from approximately **90s to 8s** in project measurements; automated **11+ hours of scraping work**.<br>
-**Built with:** FastAPI · PostgreSQL · FAISS · LlamaIndex · Mistral 7B
+### 02 / Real-Time Search Ranking
+**From clickstream events to continuously updated rankings.**
+
+Kafka ingests events; Flink aggregates clicks in **30-second windows**; Redis sorted sets hold rankings for Node.js APIs. Built around deterministic ranking, stream processing, and tiered caching.
+
+**Engineering focus:** connecting asynchronous computation to low-latency serving.
+
+`Kafka` `Apache Flink` `Redis` `Node.js`
+
+[Explore the ranking system →](https://github.com/aruthrasathish/Real-time-Search-Ranking-System)
+
+---
+
+### 03 / USDA AI Assistant
+**Federal-program discovery through retrieval and GPU inference.**
+
+Makes **176 federal programs** searchable using BGE embeddings, FAISS retrieval, and Mistral 7B. Connects automated data collection to a retrieval-augmented generation pipeline.
+
+**~90s → 8s response latency** in project measurements · **11+ hours of scraping work automated**
+
+`FastAPI` `PostgreSQL` `FAISS` `LlamaIndex` `Mistral 7B`
+
+[Explore the AI assistant →](https://github.com/aruthrasathish/usda-chatbot)
 
 <details>
-<summary><strong>More engineering work — real-time communication, authentication, and sequence modeling</strong></summary>
+<summary><strong>Also built — voice systems, browser authentication, and sequence models</strong></summary>
 
-### [SpeakUp — asynchronous voice Q&A](https://github.com/aruthrasathish/anonymous-voice-QA-platform)
+<br>
 
-Separates voice processing from real-time interaction using Kafka and WebSockets. Designed for **500+ concurrent users per room**, with **sub-100ms real-time updates** reported in the project README, and transcription across **99+ languages** through Groq Whisper.
+**[SpeakUp](https://github.com/aruthrasathish/anonymous-voice-QA-platform)** — Anonymous voice Q&A with Kafka-backed processing and WebSocket interaction. Designed for 500+ concurrent users per room; the project README reports sub-100ms real-time updates. Groq Whisper supports transcription across 99+ languages.
 
-**Built with:** Next.js · Fastify · Kafka · WebSockets · Redis · PostgreSQL · Groq Whisper
+**[CareerLens](https://github.com/aruthrasathish/job-application-tracker)** — A web application and Chrome extension connected through Google OAuth and cross-origin JWT authentication. 21 REST endpoints support application tracking and funnel analytics.
 
-### [CareerLens — application analytics across browser contexts](https://github.com/aruthrasathish/job-application-tracker)
-
-Connects a web application and Chrome extension through **Google OAuth and cross-origin JWT authentication**. Exposes **21 REST endpoints** for application tracking, funnel analytics, and burnout detection.
-
-**Built with:** React · FastAPI · PostgreSQL · Google OAuth · JWT · Chrome Extension
-
-### [Academic Performance Intelligence — sequence-based risk prediction](https://github.com/aruthrasathish/academic-performance-predictor-CNN-GRU)
-
-Models academic-risk patterns with a **CNN-GRU architecture and attention**, using PyTorch and MLflow for experimentation. Reported results distinguish the models: **88.9% classification accuracy for GRU v1** and **7.40-point grade-prediction MAE for CNN-GRU v2**.
-
-**Built with:** PyTorch · CNN · GRU · attention · Pandas · MLflow
+**[Academic Performance Intelligence](https://github.com/aruthrasathish/academic-performance-predictor-CNN-GRU)** — PyTorch sequence-model experiments tracked with MLflowflow. Reported results: 88.9% classification accuracy for GRU v1; 7.40-point grade-prediction MAE for CNN-GRU v2 with attention.
 
 </details>
 
 ## Research / CAM-Soft
 
-**AI/ML Research Intern · American University · 2026–Present**
+**American University · AI/ML Research Intern · 2026–Present**
 
-Investigating how language models can identify soft hate speech whose meaning depends on implication and context. My work brings together **Llama 3.1 8B, transformer embeddings, PyTorch, and Hugging Face tooling**, with **LoRA/PEFT and cross-dataset evaluation**.
+Studying soft hate speech whose meaning depends on context and implication. Working with **Llama 3.1 8B, transformer embeddings, PyTorch, and Hugging Face**, with **LoRA/PEFT and cross-dataset evaluation**.
 
-Research directions include counterfactual learning and scalable NLP experimentation. **Ongoing research.**
+Ongoing research directions include counterfactual learning and scalable NLP experimentation.
 
-## Technical toolkit
+## Engineering toolkit
 
-**Languages:** Python · Java · TypeScript · JavaScript · SQL · Bash<br>
-**Backend:** FastAPI · Django · Node.js · Fastify · REST APIs · WebSockets<br>
-**Distributed systems & data:** Kafka · Apache Flink · Redis · PostgreSQL · MySQL<br>
-**AI/ML:** PyTorch · Transformers · LoRA/PEFT · RAG · FAISS · embeddings<br>
-**Infrastructure:** Linux · Docker · Kubernetes · AWS · Terraform · GitHub Actions
+**Code** · Python, Java, TypeScript, JavaScript, SQL, Bash  
+**Backend & data** · FastAPI, Django, Node.js, Kafka, Flink, Redis, PostgreSQL  
+**AI / ML** · PyTorch, Transformers, LoRA/PEFT, RAG, FAISS, embeddings  
+**Infrastructure** · Linux, Docker, Kubernetes, AWS, Terraform, GitHub Actions
 
-## Foundation
+## Education & experience
 
-**George Mason University** — M.S. Information Systems, May 2026<br>
-**3.97 / 4.0 GPA · Academic Excellence Award**
+**George Mason University** · M.S. Information Systems · May 2026  
+**Academic Excellence Award · 3.97 / 4.0 GPA**
 
-Previously: **Graduate Teaching Assistant**, GMU — server-side development, REST APIs, and SQL; **Software Engineer Intern**, Verzeo Edutech — authentication, API optimization, and relational databases. B.Tech Information Technology, Anna University.
+Previously: **Graduate Teaching Assistant at GMU**, teaching server-side development, APIs, and SQL; **Software Engineer Intern at Verzeo Edutech**, working on authentication, API performance, and relational databases.
+
+B.Tech Information Technology · Anna University
 
 ---
 
-Interested in engineering roles across **backend systems, distributed infrastructure, applied AI, and ML systems**. [Let's connect.](https://www.linkedin.com/in/aruthrasathish/)
+**Building where software, scale, and intelligence meet.**  
+[Connect with me →](https://www.linkedin.com/in/aruthra-sathish-kumar369/)
