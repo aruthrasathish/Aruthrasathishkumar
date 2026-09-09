@@ -1,345 +1,207 @@
-"""Generate profile SVGs using Python 3.11+ and the standard library.
+"""Generate Aruthra's profile banner. Standard library only."""
 
-Without --fetch: generate an illustrative visual without contribution data.
-With --fetch: include a snapshot of 12 complete weeks of GitHub contributions.
-"""
-
-import argparse
-import datetime as dt
-import html
-import json
-import os
 from pathlib import Path
-import re
-import urllib.request
+from html import escape
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
+ASSETS = ROOT / "assets"
 
 
-def fetch_activity():
-    owner = os.environ["PROFILE_OWNER"]
-    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]{0,38}", owner):
-        raise ValueError("Invalid GitHub username")
-
-    today = dt.datetime.now(dt.timezone.utc).date()
-    end = today - dt.timedelta(days=today.weekday())
-    start = end - dt.timedelta(weeks=12)
-
-    query = """
-    query($login: String!, $from: DateTime!, $to: DateTime!) {
-      user(login: $login) {
-        contributionsCollection(from: $from, to: $to) {
-          contributionCalendar {
-            weeks {
-              contributionDays {
-                date
-                contributionCount
-              }
-            }
-          }
+def render(dark=False, mobile=False):
+    colors = (
+        {
+            "bg": "#0d1117",
+            "ink": "#edf3fa",
+            "muted": "#a3b1c2",
+            "line": "#29384a",
+            "blue": "#8cbcff",
+            "teal": "#78decb",
+            "panel": "#131e2c",
+            "wash": "#142b40",
         }
-      }
-    }
-    """
-
-    payload = {
-        "query": query,
-        "variables": {
-            "login": owner,
-            "from": f"{start}T00:00:00Z",
-            "to": f"{end - dt.timedelta(days=1)}T23:59:59Z",
-        },
-    }
-
-    request = urllib.request.Request(
-        "https://api.github.com/graphql",
-        data=json.dumps(payload).encode(),
-        headers={
-            "Authorization": "Bearer " + os.environ["GH_TOKEN"],
-            "Content-Type": "application/json",
-            "User-Agent": "profile-visual",
-        },
+        if dark
+        else {
+            "bg": "#f7faff",
+            "ink": "#14263e",
+            "muted": "#52667d",
+            "line": "#cbd9e8",
+            "blue": "#245fc0",
+            "teal": "#087f78",
+            "panel": "#ffffff",
+            "wash": "#e7f0fc",
+        }
     )
 
-    with urllib.request.urlopen(request, timeout=30) as response:
-        result = json.load(response)
-
-    if result.get("errors") or not result.get("data", {}).get("user"):
-        raise RuntimeError("GitHub did not return a valid contribution calendar")
-
-    weeks = result["data"]["user"]["contributionsCollection"][
-        "contributionCalendar"
-    ]["weeks"]
-
-    days = {}
-    for week in weeks:
-        for item in week["contributionDays"]:
-            date = dt.date.fromisoformat(item["date"])
-            count = item["contributionCount"]
-
-            if type(count) is not int or count < 0:
-                raise ValueError("Invalid contribution count")
-
-            if start <= date < end:
-                if date in days:
-                    raise ValueError("Duplicate calendar date")
-                days[date] = count
-
-    if len(days) != 84:
-        raise ValueError("Incomplete calendar; existing assets preserved")
-
-    counts = [
-        sum(
-            days[start + dt.timedelta(days=i * 7 + j)]
-            for j in range(7)
-        )
-        for i in range(12)
-    ]
-
-    return {
-        "owner": owner,
-        "start": str(start),
-        "end": str(end - dt.timedelta(days=1)),
-        "updated": str(today),
-        "weeks": counts,
-    }
-
-
-def render(dark=False, mobile=False, activity=None):
-    if dark:
-        bg, card, ink, muted, line, blue, teal = (
-            "#0d1117", "#161b22", "#e6edf3", "#9da7b3",
-            "#30363d", "#79b8ff", "#6ed7c5",
-        )
-    else:
-        bg, card, ink, muted, line, blue, teal = (
-            "#ffffff", "#f6f8fa", "#182536", "#526172",
-            "#d0d7de", "#185da8", "#087b70",
-        )
-
-    if mobile:
-        width, height = 420, 426 if activity else 352
-    else:
-        width, height = 840, 314 if activity else 294
-
+    c = colors
+    width, height = (480, 390) if mobile else (960, 300)
     parts = [
         (
             '<svg xmlns="http://www.w3.org/2000/svg" '
             f'viewBox="0 0 {width} {height}" '
             f'width="{width}" height="{height}" '
-            'role="img" aria-labelledby="title desc">'
+            'role="img" aria-labelledby="title description">'
         ),
-        '<title id="title">Systems + Scale + Intelligence</title>',
+        "<title id=\"title\">Aruthra Sathish Kumar — Software Engineer</title>",
         (
-            '<desc id="desc">'
-            'Illustrative distributed ranking and retrieval-augmented '
-            'generation flows. Contribution data, when present, is a '
-            'separate weekly GitHub snapshot.'
+            '<desc id="description">'
+            'Backend and distributed systems. Applied AI and machine learning. '
+            'An abstract animated topology connects events, systems, and inference.'
             '</desc>'
         ),
         """
         <style>
           text {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont,
+                         "Segoe UI", Arial, sans-serif;
+          }
+          .mono {
+            font-family: "SFMono-Regular", Consolas,
+                         "Liberation Mono", monospace;
           }
           .packet {
-            stroke-dasharray: 4 28;
-            animation: flow 3s linear infinite;
+            stroke-dasharray: 6 95;
+            animation: travel 7s linear infinite;
           }
-          @keyframes flow {
-            to { stroke-dashoffset: -32; }
+          .reverse {
+            animation-direction: reverse;
+            animation-delay: -3s;
+          }
+          @keyframes travel {
+            to { stroke-dashoffset: -202; }
           }
           @media (prefers-reduced-motion: reduce) {
-            .packet {
-              animation: none;
-              display: none;
-            }
+            .packet { animation: none; display: none; }
           }
         </style>
         """,
         (
-            f'<rect x="0.5" y="0.5" width="{width - 1}" '
-            f'height="{height - 1}" rx="12" '
-            f'fill="{bg}" stroke="{line}"/>'
+            f'<rect x="1" y="1" width="{width - 2}" '
+            f'height="{height - 2}" rx="18" '
+            f'fill="{c["bg"]}" stroke="{c["line"]}"/>'
         ),
     ]
 
-    def text(x, y, value, size=13, color=muted, weight=400):
+    def text(x, y, value, size, fill=None, weight=400,
+             spacing=None, mono=False):
+        attributes = (
+            f'x="{x}" y="{y}" font-size="{size}" '
+            f'fill="{fill or c["ink"]}" font-weight="{weight}"'
+        )
+        if spacing is not None:
+            attributes += f' letter-spacing="{spacing}"'
+        if mono:
+            attributes += ' class="mono"'
+        parts.append(f"<text {attributes}>{escape(value)}</text>")
+
+    def line(path, color, stroke_width=1, extra=""):
         parts.append(
-            f'<text x="{x}" y="{y}" fill="{color}" '
-            f'font-size="{size}" font-weight="{weight}">'
-            f'{html.escape(str(value))}</text>'
+            f'<path d="{path}" fill="none" stroke="{color}" '
+            f'stroke-width="{stroke_width}" stroke-linecap="round" {extra}/>'
         )
 
-    text(24, 31, "SYSTEMS + SCALE + INTELLIGENCE", 14, ink, 700)
-    text(24, 52, "Illustrative flows / motion is not live telemetry", 11)
-
-    lanes = [
-        (
-            "DISTRIBUTED SYSTEMS",
-            blue,
-            [
-                ("Kafka", "Clickstream events"),
-                ("Flink", "Stream ranking"),
-                ("Redis + API", "Low-latency serving"),
-            ],
-        ),
-        (
-            "APPLIED AI",
-            teal,
-            [
-                ("BGE", "Embed input"),
-                ("FAISS", "Retrieve context"),
-                ("Mistral 7B", "Generate response"),
-            ],
-        ),
-    ]
-
-    for lane, (label, accent, nodes) in enumerate(lanes):
-        text(
-            24 + lane * 198 if mobile else 24,
-            79 if mobile else 77 + lane * 88,
-            label,
-            10,
-            accent,
-            700,
+    def node(x, y, label, accent):
+        parts.append(
+            f'<rect x="{x}" y="{y}" width="98" height="40" '
+            f'rx="9" fill="{c["panel"]}" stroke="{c["line"]}"/>'
         )
-
-        box_width = 174 if mobile else 224
-
-        for index, (name, caption) in enumerate(nodes):
-            x = 24 + lane * 198 if mobile else 24 + index * 282
-            y = 91 + index * 67 if mobile else 87 + lane * 88
-
-            parts.append(
-                f'<rect x="{x}" y="{y}" width="{box_width}" '
-                f'height="48" rx="6" fill="{card}" stroke="{line}"/>'
-            )
-            parts.append(
-                f'<rect x="{x}" y="{y + 10}" width="3" '
-                f'height="28" rx="1" fill="{accent}"/>'
-            )
-
-            text(x + 14, y + 20, name, 15, ink, 700)
-            text(x + 14, y + 37, caption, 11)
-
-            if index < 2:
-                if mobile:
-                    center = x + box_width / 2
-                    path = f"M{center} {y + 49}v17"
-                    arrow = f"M{center - 3} {y + 62}l3 4 3 -4"
-                else:
-                    path = f"M{x + box_width + 1} {y + 24}h55"
-                    arrow = f"M{x + box_width + 51} {y + 20}l5 4 -5 4"
-
-                parts.append(
-                    f'<path d="{path}" stroke="{line}" fill="none"/>'
-                )
-                parts.append(
-                    f'<path class="packet" d="{path}" '
-                    f'stroke="{accent}" stroke-width="2" fill="none"/>'
-                )
-                parts.append(
-                    f'<path d="{arrow}" stroke="{accent}" fill="none"/>'
-                )
-
-    top = 294 if mobile else 244
-    parts.append(
-        f'<path d="M24 {top - 9}H{width - 24}" stroke="{line}"/>'
-    )
-
-    if activity is None:
-        text(
-            24, top + 14,
-            "Code, experiments, and systems in progress.",
-            12, ink,
+        parts.append(
+            f'<circle cx="{x + 14}" cy="{y + 20}" r="3" '
+            f'fill="{accent}"/>'
         )
-        text(
-            24, top + 34,
-            "GitHub activity appears after a successful data refresh.",
-            11,
-        )
+        text(x + 25, y + 24, label, 10, c["ink"], 600, mono=True)
+
+    if mobile:
+        text(28, 36, "SYSTEMS / SCALE / INTELLIGENCE",
+             10, c["blue"], 600, 1.2, True)
+
+        text(28, 91, "Aruthra", 43, weight=700)
+        text(28, 138, "Sathish Kumar", 43, weight=700)
+
+        line("M28 160H83", c["teal"], 3)
+        text(28, 194, "Software Engineer", 21, weight=600)
+        text(28, 224, "Backend & Distributed Systems", 14, c["muted"])
+        text(28, 247, "Applied AI / ML", 14, c["muted"])
+
+        # Compact schematic with a second, curved route.
+        route = "M126 311H191M289 311H354"
+        curved = "M77 331V348Q77 358 87 358H393Q403 358 403 348V331"
+        line(route, c["line"], 1.5)
+        line(curved, c["line"], 1.5)
+        line(route, c["blue"], 2, 'class="packet"')
+        line(curved, c["teal"], 2, 'class="packet reverse"')
+
+        node(28, 291, "EVENTS", c["blue"])
+        node(191, 291, "SYSTEMS", c["blue"])
+        node(354, 291, "INFERENCE", c["teal"])
+
     else:
-        counts = activity["weeks"]
-        text(
-            24, top + 10,
-            "GITHUB CONTRIBUTIONS / 12 COMPLETE WEEKS",
-            10, muted, 700,
+        # Restrained visual field behind the topology.
+        parts.append(
+            f'<circle cx="789" cy="145" r="116" '
+            f'fill="{c["wash"]}" opacity="0.65"/>'
         )
-
-        chart_x = 24 if mobile else 454
-        baseline = top + 67 if mobile else top + 30
-        step = 30 if mobile else 28
-        peak = max(counts) or 1
-
-        for index, count in enumerate(counts):
-            bar_height = 32 * count / peak
-            x = chart_x + index * step
-
-            parts.append(
-                f'<path d="M{x} {baseline}h{step - 7}" stroke="{line}"/>'
-            )
-
-            if count:
+        for x in range(608, 925, 24):
+            for y in range(40, 255, 24):
                 parts.append(
-                    f'<rect x="{x}" y="{baseline - bar_height:.2f}" '
-                    f'width="{step - 7}" height="{bar_height:.2f}" '
-                    f'rx="2" fill="{teal}">'
-                    f'<title>Week {index + 1}: {count} contributions</title>'
-                    '</rect>'
+                    f'<circle cx="{x}" cy="{y}" r="1" '
+                    f'fill="{c["line"]}" opacity="0.6"/>'
                 )
 
-        text(
-            24,
-            top + 88 if mobile else top + 30,
-            f'{activity["start"]} to {activity["end"]} / {sum(counts)} total',
-            11,
-            ink,
-        )
-        text(
-            24,
-            top + 109 if mobile else top + 51,
-            f'Updated {activity["updated"]} UTC / '
-            f'peak {max(counts)}/wk / counts, not impact',
-            10,
-        )
+        text(36, 42, "SYSTEMS / SCALE / INTELLIGENCE",
+             11, c["blue"], 600, 1.6, True)
+
+        text(36, 107, "Aruthra", 49, weight=700)
+        text(36, 161, "Sathish Kumar", 49, weight=700)
+
+        line("M36 185H96", c["teal"], 3)
+        text(36, 221, "Software Engineer", 23, weight=600)
+        text(36, 251, "Backend & Distributed Systems",
+             14, c["muted"])
+        text(36, 274, "Applied AI / ML", 14, c["muted"])
+
+        # Abstract topology, not a claim about a particular deployment.
+        route_a = "M688 80H745Q765 80 765 100V129"
+        route_b = "M765 169V198Q765 218 785 218H820"
+        route_c = "M590 80H575Q561 80 561 94V204Q561 218 575 218H820"
+        route_d = "M814 149H894Q908 149 908 135V94Q908 80 894 80H688"
+
+        for route in (route_a, route_b, route_c, route_d):
+            line(route, c["line"], 1.5)
+
+        line(route_a, c["blue"], 2, 'class="packet"')
+        line(route_b, c["teal"], 2, 'class="packet reverse"')
+        line(route_c, c["teal"], 2, 'class="packet"')
+        line(route_d, c["blue"], 2, 'class="packet reverse"')
+
+        node(590, 60, "EVENTS", c["blue"])
+        node(716, 129, "SYSTEMS", c["blue"])
+        node(820, 198, "INFERENCE", c["teal"])
+
+        text(626, 271, "BUILD / CONNECT / REASON",
+             10, c["muted"], 500, 1.5, True)
 
     parts.append("</svg>")
-    svg = "\n".join(parts) + "\n"
-    ET.fromstring(svg)
-    return svg
+    result = "\n".join(parts) + "\n"
+    ET.fromstring(result)
+    return result
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--fetch", action="store_true")
-    args = parser.parse_args()
-
-    activity = fetch_activity() if args.fetch else None
-    assets = ROOT / "assets"
-    assets.mkdir(exist_ok=True)
+    ASSETS.mkdir(exist_ok=True)
 
     outputs = {}
     for mobile in (False, True):
         for dark in (False, True):
-            name = "system-flow" + ("-mobile" if mobile else "")
-            name += "-dark.svg" if dark else "-light.svg"
-            outputs[assets / name] = render(dark, mobile, activity)
+            filename = "system-flow"
+            if mobile:
+                filename += "-mobile"
+            filename += "-dark.svg" if dark else "-light.svg"
+            outputs[ASSETS / filename] = render(dark, mobile)
 
-    if activity:
-        outputs[assets / "activity.json"] = (
-            json.dumps(activity, indent=2) + "\n"
-        )
-
-    # Fetch and validate every output before changing existing assets.
     for path, content in outputs.items():
         path.write_text(content, encoding="utf-8")
-
-    print(
-        "Generated four SVG variants"
-        + (" and activity.json" if activity else " without activity data")
-    )
+        print(f"Generated {path.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
