@@ -1,7 +1,7 @@
-"""Generate Aruthra's profile banners using Python's standard library."""
+"""Generate profile banners using Python's standard library."""
 
-from pathlib import Path
 from html import escape
+from pathlib import Path
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -10,7 +10,7 @@ ASSETS = ROOT / "assets"
 
 def render(dark=False, mobile=False):
     if dark:
-        colors = {
+        c = {
             "bg": "#0d1117",
             "ink": "#edf3fa",
             "muted": "#a3b1c2",
@@ -21,7 +21,7 @@ def render(dark=False, mobile=False):
             "wash": "#142b40",
         }
     else:
-        colors = {
+        c = {
             "bg": "#f7faff",
             "ink": "#14263e",
             "muted": "#52667d",
@@ -32,7 +32,6 @@ def render(dark=False, mobile=False):
             "wash": "#e7f0fc",
         }
 
-    c = colors
     width, height = (480, 390) if mobile else (960, 300)
 
     parts = [
@@ -42,12 +41,17 @@ def render(dark=False, mobile=False):
             f'width="{width}" height="{height}" '
             'role="img" aria-labelledby="title description">'
         ),
-        "<title id=\"title\">Aruthra Sathish Kumar — Software Engineer</title>",
+        (
+            '<title id="title">'
+            'Aruthra Sathish Kumar — Software Engineer'
+            '</title>'
+        ),
         (
             '<desc id="description">'
-            "Backend and distributed systems. Applied AI and machine learning. "
-            "An abstract animated topology connects events, systems, and inference."
-            "</desc>"
+            'Backend and distributed systems. Applied AI and machine learning. '
+            'An illustrative animated topology connects events, systems, '
+            'and inference.'
+            '</desc>'
         ),
         """
         <style>
@@ -55,28 +59,21 @@ def render(dark=False, mobile=False):
             font-family: -apple-system, BlinkMacSystemFont,
                          "Segoe UI", Arial, sans-serif;
           }
-
           .mono {
             font-family: "SFMono-Regular", Consolas,
                          "Liberation Mono", monospace;
           }
-
           .packet {
             stroke-dasharray: 6 95;
             animation: travel 7s linear infinite;
           }
-
           .reverse {
             animation-direction: reverse;
             animation-delay: -3s;
           }
-
           @keyframes travel {
-            to {
-              stroke-dashoffset: -202;
-            }
+            to { stroke-dashoffset: -202; }
           }
-
           @media (prefers-reduced-motion: reduce) {
             .packet {
               animation: none;
@@ -93,35 +90,24 @@ def render(dark=False, mobile=False):
     ]
 
     def text(
-        x,
-        y,
-        value,
-        size,
-        fill=None,
-        weight=400,
-        spacing=None,
-        mono=False,
-        text_length=None,
+        x, y, value, size, fill=None, weight=400,
+        spacing=None, mono=False, text_length=None,
     ):
         attributes = (
             f'x="{x}" y="{y}" font-size="{size}" '
             f'fill="{fill or c["ink"]}" font-weight="{weight}"'
         )
-
         if spacing is not None:
             attributes += f' letter-spacing="{spacing}"'
-
         if mono:
             attributes += ' class="mono"'
-
         if text_length is not None:
             attributes += (
-                f' textLength="{text_length}" '
-                'lengthAdjust="spacingAndGlyphs"'
+                f' textLength="{text_length}"'
+                ' lengthAdjust="spacingAndGlyphs"'
             )
-
         parts.append(
-            f"<text {attributes}>{escape(str(value))}</text>"
+            f'<text {attributes}>{escape(str(value))}</text>'
         )
 
     def line(path, color, stroke_width=1, extra=""):
@@ -136,62 +122,34 @@ def render(dark=False, mobile=False):
             f'<rect x="{x}" y="{y}" width="98" height="40" '
             f'rx="9" fill="{c["panel"]}" stroke="{c["line"]}"/>'
         )
-
         parts.append(
             f'<circle cx="{x + 14}" cy="{y + 20}" '
             f'r="3" fill="{accent}"/>'
         )
-
         text(
-            x + 25,
-            y + 24,
-            label,
-            10,
-            c["ink"],
-            600,
-            mono=True,
+            x + 25, y + 24, label, 10,
+            c["ink"], 600, mono=True,
         )
 
     if mobile:
         text(
-            28,
-            36,
-            "SYSTEMS / SCALE / INTELLIGENCE",
-            10,
-            c["blue"],
-            600,
-            1.2,
-            True,
+            28, 36, "SYSTEMS / SCALE / INTELLIGENCE",
+            10, c["blue"], 600, 1.2, True,
         )
 
         text(28, 91, "Aruthra", 43, weight=700)
-
-        # Match the name's width and underline precisely.
-        name_x = 28
-        name_width = 293
-
         text(
-            name_x,
-            138,
-            "Sathish Kumar",
-            43,
-            weight=700,
-            text_length=name_width,
+            28, 138, "Sathish Kumar", 43,
+            weight=700, text_length=293,
         )
 
-        line(
-            f"M{name_x} 160H{name_x + name_width}",
-            c["teal"],
-            3,
-        )
+        # Name and underline use the same width.
+        line("M28 160H321", c["teal"], 3)
 
         text(28, 194, "Software Engineer", 21, weight=600)
         text(
-            28,
-            224,
-            "Backend & Distributed Systems",
-            14,
-            c["muted"],
+            28, 224, "Backend & Distributed Systems",
+            14, c["muted"],
         )
         text(28, 247, "Applied AI / ML", 14, c["muted"])
 
@@ -203,14 +161,8 @@ def render(dark=False, mobile=False):
 
         line(route, c["line"], 1.5)
         line(curved, c["line"], 1.5)
-
         line(route, c["blue"], 2, 'class="packet"')
-        line(
-            curved,
-            c["teal"],
-            2,
-            'class="packet reverse"',
-        )
+        line(curved, c["teal"], 2, 'class="packet reverse"')
 
         node(28, 291, "EVENTS", c["blue"])
         node(191, 291, "SYSTEMS", c["blue"])
@@ -230,48 +182,26 @@ def render(dark=False, mobile=False):
                 )
 
         text(
-            36,
-            42,
-            "SYSTEMS / SCALE / INTELLIGENCE",
-            11,
-            c["blue"],
-            600,
-            1.6,
-            True,
+            36, 42, "SYSTEMS / SCALE / INTELLIGENCE",
+            11, c["blue"], 600, 1.6, True,
         )
 
         text(36, 107, "Aruthra", 49, weight=700)
-
-        # Match the name's width and underline precisely.
-        name_x = 36
-        name_width = 334
-
         text(
-            name_x,
-            161,
-            "Sathish Kumar",
-            49,
-            weight=700,
-            text_length=name_width,
+            36, 161, "Sathish Kumar", 49,
+            weight=700, text_length=334,
         )
 
-        line(
-            f"M{name_x} 185H{name_x + name_width}",
-            c["teal"],
-            3,
-        )
+        # Name and underline use the same width.
+        line("M36 185H370", c["teal"], 3)
 
         text(36, 221, "Software Engineer", 23, weight=600)
         text(
-            36,
-            251,
-            "Backend & Distributed Systems",
-            14,
-            c["muted"],
+            36, 251, "Backend & Distributed Systems",
+            14, c["muted"],
         )
         text(36, 274, "Applied AI / ML", 14, c["muted"])
 
-        # Abstract topology illustrating connected systems.
         route_a = "M688 80H745Q765 80 765 100V129"
         route_b = "M765 169V198Q765 218 785 218H820"
         route_c = (
@@ -287,58 +217,36 @@ def render(dark=False, mobile=False):
             line(route, c["line"], 1.5)
 
         line(route_a, c["blue"], 2, 'class="packet"')
-        line(
-            route_b,
-            c["teal"],
-            2,
-            'class="packet reverse"',
-        )
+        line(route_b, c["teal"], 2, 'class="packet reverse"')
         line(route_c, c["teal"], 2, 'class="packet"')
-        line(
-            route_d,
-            c["blue"],
-            2,
-            'class="packet reverse"',
-        )
+        line(route_d, c["blue"], 2, 'class="packet reverse"')
 
         node(590, 60, "EVENTS", c["blue"])
         node(716, 129, "SYSTEMS", c["blue"])
         node(820, 198, "INFERENCE", c["teal"])
 
         text(
-            626,
-            271,
-            "BUILD / CONNECT / REASON",
-            10,
-            c["muted"],
-            500,
-            1.5,
-            True,
+            626, 271, "BUILD / CONNECT / REASON",
+            10, c["muted"], 500, 1.5, True,
         )
 
     parts.append("</svg>")
     result = "\n".join(parts) + "\n"
-
-    # Validate the SVG before returning it.
     ET.fromstring(result)
     return result
 
 
 def main():
     ASSETS.mkdir(exist_ok=True)
-
-    # Generate and validate every variant before writing.
     outputs = {}
 
+    # Validate every variant before writing files.
     for mobile in (False, True):
         for dark in (False, True):
             filename = "system-flow"
-
             if mobile:
                 filename += "-mobile"
-
             filename += "-dark.svg" if dark else "-light.svg"
-
             outputs[ASSETS / filename] = render(
                 dark=dark,
                 mobile=mobile,
