@@ -81,7 +81,7 @@ FastAPI · PostgreSQL · FAISS · LlamaIndex
 </tr>
 </table>
 
-**Also built:** [CareerLens — application analytics](https://github.com/aruthrasathish/job-application-tracker) · [Academic Performance Intelligence — sequence modeling](https://github.com/aruthrasathish/academic-performance-predictor-CNN-GRU)
+**More to explore:** I’ve built other projects across software systems and applied AI. [Explore my repositories →](https://github.com/aruthrasathish?tab=repositories)
 
 ## Research
 
