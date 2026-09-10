@@ -1,34 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-labelledby="title description">
 <title id="title">Aruthra Sathish Kumar — Software Engineer</title>
-<desc id="description">Backend and distributed systems. Applied AI and machine learning. An abstract animated topology connects events, systems, and inference.</desc>
+<desc id="description">Backend and distributed systems. Applied AI and machine learning. An illustrative animated topology connects events, systems, and inference.</desc>
 
         <style>
           text {
             font-family: -apple-system, BlinkMacSystemFont,
                          "Segoe UI", Arial, sans-serif;
           }
-
           .mono {
             font-family: "SFMono-Regular", Consolas,
                          "Liberation Mono", monospace;
           }
-
           .packet {
             stroke-dasharray: 6 95;
             animation: travel 7s linear infinite;
           }
-
           .reverse {
             animation-direction: reverse;
             animation-delay: -3s;
           }
-
           @keyframes travel {
-            to {
-              stroke-dashoffset: -202;
-            }
+            to { stroke-dashoffset: -202; }
           }
-
           @media (prefers-reduced-motion: reduce) {
             .packet {
               animation: none;
