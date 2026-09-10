@@ -17,11 +17,12 @@
 
 ## 👋 About Me
 
-I’m a **Software Engineer focused on backend systems, distributed computing, and applied AI/ML**. I build real-time applications, investigate system performance, and connect AI capabilities to practical software workflows.
+I’m a **Software Engineer focused on backend systems, distributed computing, and applied AI/ML**. I build event-driven backends and AI applications—from real-time ranking and voice processing to incident investigation and language-model research.
 
 Currently conducting **AI/ML research at American University** and seeking **early-career Software Engineer, AI Engineer, and ML Engineer roles**.
 
 <a name="projects"></a>
+
 ## 🚀 Featured Projects
 
 ### [WatchTower](https://github.com/aruthrasathish/Watchtower-MCP-server-for-incident-response)
@@ -61,6 +62,8 @@ FastAPI · PostgreSQL · FAISS · LlamaIndex · Mistral 7B
 - **Software Engineer Intern · Verzeo Edutech**  
   *Dec 2022 – Jan 2023*  
   Optimized **Django REST Framework data access and SQL queries**, reducing redundant API calls by **40%** and heavy-query latency by **35%**.
+
+
 ## 🧰 Toolbox
 
 **Programming Languages:**
@@ -74,11 +77,13 @@ FastAPI · PostgreSQL · FAISS · LlamaIndex · Mistral 7B
 ![SQL](https://img.shields.io/badge/SQL-336791?style=flat&logo=postgresql&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
-**Frameworks & Libraries:**
+**Frontend & Build Tools:**
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+
+**Backend & APIs:**
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=nodedotjs&logoColor=white)
