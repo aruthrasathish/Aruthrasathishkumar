@@ -152,16 +152,6 @@ Worked on authentication, API optimization, and relational database/query optimi
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-168B6A?style=flat)
 
-## Professional Experience
-
-**AI/ML Research Intern · American University · 2026–Present**  
-CAM-Soft research involving language models, embeddings, parameter-efficient adaptation, and cross-dataset evaluation.
-
-**Graduate Teaching Assistant · George Mason University**  
-IT 207 — Server-Side Development. Taught backend programming, Node.js, REST APIs, SQL, MySQL, and debugging.
-
-**Software Engineer Intern · Verzeo Edutech**  
-Worked with React, Django, Django REST Framework, authentication, API optimization, and relational databases.
 
 ## 🎓 Education & Recognition
 
