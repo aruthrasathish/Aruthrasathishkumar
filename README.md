@@ -50,19 +50,19 @@ FastAPI · PostgreSQL · FAISS · LlamaIndex · Mistral 7B
 ## 🔬 Research & Experience
 
 ### American University · AI/ML Research Intern
-**[Jul 2026] - [Present] · CAM-Soft**
+**Jul 2026 - Present · CAM-Soft**
 
 Investigating soft hate speech whose meaning depends on context and implication. Working with **Llama 3.1 8B, transformer embeddings, LoRA/PEFT, and cross-dataset evaluation** using PyTorch and Hugging Face.
 
 Ongoing research directions include counterfactual learning and scalable NLP experimentation.
 
 ### George Mason University · Graduate Teaching Assistant
-**[Aug 2025] - [May 2026] · IT 207 - Server-Side Development**
+**Aug 2025 - May 2026 · IT 207 - Server-Side Development**
 
 Taught backend programming, REST APIs, SQL, and debugging. Helped students implement server-side applications with Node.js and MySQL.
 
 ### Verzeo Edutech · Software Engineer Intern
-**[Dec 2022] - [Jan 2023]**
+**Dec 2022 - Jan 2023**
 
 Worked on authentication, API optimization, and relational database/query optimization in a React and Django REST Framework application.
 
@@ -91,6 +91,7 @@ Worked on authentication, API optimization, and relational database/query optimi
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+![pgvector](https://img.shields.io/badge/pgvector-336791?style=flat)
 
 **AI & Machine Learning:**
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
@@ -100,6 +101,9 @@ Worked on authentication, API optimization, and relational database/query optimi
 ![RAG](https://img.shields.io/badge/RAG-087F8C?style=flat)
 ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat)
 ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
+![MCP](https://img.shields.io/badge/MCP-24292F?style=flat)
+![LlamaIndex](https://img.shields.io/badge/LlamaIndex-7C3AED?style=flat)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 
 **Cloud & Infrastructure:**
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat)
