@@ -52,9 +52,11 @@ FastAPI · PostgreSQL · FAISS · LlamaIndex · Mistral 7B
 ### American University · AI/ML Research Intern
 **Jul 2026 - Present · CAM-Soft**
 
-Investigating soft hate speech whose meaning depends on context and implication. Working with **Llama 3.1 8B, transformer embeddings, LoRA/PEFT, and cross-dataset evaluation** using PyTorch and Hugging Face.
+Built a **dual-pathway implicit hate speech system** in PyTorch, harmonizing **147K posts across seven benchmarks** and learning separate literal and Llama-derived implied representations.
 
-Ongoing research directions include counterfactual learning and scalable NLP experimentation.
+**Implemented:** A cached **Llama-3.1-8B reasoning pipeline over 140,727 posts**, an interpretation gate for noisy outputs, and **multi-head cross-attention** to fuse six complementary signals.
+
+Fine-tuned **NV-Embed-v2 with PEFT LoRA**, training **6.8M adapter parameters** with the backbone frozen. Reported evaluation results include **0.835 macro-F1 across five benchmarks** and a **CAD macro-F1 improvement from 0.7504 to 0.7854** with implicature-gap and camouflage scoring plus fusion.
 
 ### George Mason University · Graduate Teaching Assistant
 **Aug 2025 - May 2026 · IT 207 - Server-Side Development**
