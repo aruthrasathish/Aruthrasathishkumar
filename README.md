@@ -12,17 +12,14 @@
   &nbsp; / &nbsp;
   <a href="#featured-projects"><strong>Featured projects</strong></a>
   &nbsp; / &nbsp;
-  <a href="#research"><strong>Research</strong></a>
+  <a href="#research--experience"><strong>Research & Experience</strong></a>
 </p>
 
 ## About Me
 
-I’m a **Software Engineer working at the intersection of backend systems, distributed computing, and applied AI/ML**. I build applications that connect real-time data, backend services, and machine learning.
+I’m a **Software Engineer focused on backend systems, distributed computing, and applied AI/ML**. My projects span approval-gated incident response, real-time ranking, asynchronous voice processing, and retrieval-augmented applications.
 
-- **⚙️ Systems engineering:** Building event-driven applications with **Kafka, Flink, Redis, PostgreSQL, and Kubernetes**—from real-time ranking to AI-assisted incident response.
-- **🧠 Applied AI:** Currently working on **CAM-Soft at American University**, investigating contextual language understanding with **8B language models, transformer embeddings, LoRA/PEFT, and cross-dataset evaluation**.
-- **🎓 Academic recognition:** M.S. Information Systems from **George Mason University**, with a **3.97/4.0 GPA and the Academic Excellence Award**.
-- **🤝 Opportunities:** Interested in **Software Engineering, Backend & Distributed Systems, AI Engineering, and ML Systems** roles.
+Currently conducting **AI/ML research at American University**. Seeking **early-career Software Engineer, AI Engineer, and ML Engineer opportunities**.
 
 ## Featured Projects
 
@@ -31,11 +28,12 @@ I’m a **Software Engineer working at the intersection of backend systems, dist
 <td width="50%" valign="top">
 
 ### [WatchTower](https://github.com/aruthrasathish/Watchtower-MCP-server-for-incident-response)
-**AI-assisted incident response**
 
-Connects **12 MCP tools across 4 data sources** to investigate incidents and rank suspects. An **HMAC-SHA256 approval broker** gates Kubernetes remediation.
+**AI-assisted investigation. Approval-gated remediation.**
 
-**~83% less triage time in simulated incidents.**
+Connects **12 MCP tools across 4 data sources** to investigate incidents and rank suspects. An **HMAC-SHA256 approval broker** controls Kubernetes remediation.
+
+**Result:** ~83% less triage time in simulated incidents.
 
 Python · MCP · Kubernetes · PostgreSQL · pgvector
 
@@ -43,11 +41,12 @@ Python · MCP · Kubernetes · PostgreSQL · pgvector
 <td width="50%" valign="top">
 
 ### [Real-Time Search Ranking](https://github.com/aruthrasathish/Real-time-Search-Ranking-System)
-**Event-driven ranking infrastructure**
 
-Processes clickstream events through **Kafka and Flink**, aggregates clicks in **30-second windows**, and serves rankings from **Redis sorted sets** through Node.js APIs.
+**Clickstream processing with independent request serving.**
 
-**Separates stream computation from request serving.**
+Kafka ingests events; Flink aggregates clicks in **30-second windows**; Redis sorted sets maintain rankings for Node.js APIs.
+
+**Design:** Deterministic ranking with asynchronous computation and tiered caching.
 
 Kafka · Flink · Redis · Node.js
 
@@ -57,11 +56,12 @@ Kafka · Flink · Redis · Node.js
 <td width="50%" valign="top">
 
 ### [SpeakUp](https://github.com/aruthrasathish/anonymous-voice-QA-platform)
-**Real-time anonymous voice Q&A**
 
-Decouples voice processing through **Kafka** from live **WebSocket** interaction. Groq Whisper enables transcription across **99+ languages**.
+**Asynchronous voice processing. Real-time interaction.**
 
-**Designed for 500+ concurrent users per room.**
+Separates **Kafka-backed voice processing** from live **WebSocket** updates. Groq Whisper supports transcription across **99+ languages**.
+
+**Capacity target:** Designed for 500+ concurrent users per room.
 
 Next.js · Fastify · Kafka · Redis · PostgreSQL
 
@@ -69,11 +69,12 @@ Next.js · Fastify · Kafka · Redis · PostgreSQL
 <td width="50%" valign="top">
 
 ### [USDA AI Assistant](https://github.com/aruthrasathish/usda-chatbot)
-**Retrieval-augmented program discovery**
 
-Makes **176 federal programs** searchable through **BGE embeddings, FAISS retrieval, and Mistral 7B** generation.
+**Federal-program discovery through retrieval and inference.**
 
-**~90s → 8s response latency in project measurements.**
+Makes **176 federal programs** searchable using BGE embeddings, FAISS retrieval, and Mistral 7B generation.
+
+**Result:** ~90s → 8s response latency in project measurements.
 
 FastAPI · PostgreSQL · FAISS · LlamaIndex
 
@@ -81,17 +82,25 @@ FastAPI · PostgreSQL · FAISS · LlamaIndex
 </tr>
 </table>
 
-**More to explore:** I’ve built other projects across software systems and applied AI. [Explore my repositories →](https://github.com/aruthrasathish?tab=repositories)
+[**Explore more projects across software systems and applied AI →**](https://github.com/aruthrasathish?tab=repositories)
 
-## Research
+## Research & Experience
 
-### CAM-Soft · American University
+### American University · AI/ML Research Intern
+**2026–Present · CAM-Soft**
 
-**AI/ML Research Intern · 2026–Present**
-
-Investigating soft hate speech whose meaning depends on context and implication. My work brings together **Llama 3.1 8B, transformer embeddings, LoRA/PEFT, and cross-dataset evaluation**, using **PyTorch and Hugging Face**.
+Investigating soft hate speech whose meaning depends on context and implication. Working with **Llama 3.1 8B, transformer embeddings, LoRA/PEFT, and cross-dataset evaluation** using PyTorch and Hugging Face.
 
 Ongoing research directions include counterfactual learning and scalable NLP experimentation.
+
+### George Mason University · Graduate Teaching Assistant
+**IT 207 — Server-Side Development**
+
+Taught backend programming, REST APIs, SQL, and debugging. Supported students in implementing server-side applications with Node.js and MySQL.
+
+### Verzeo Edutech · Software Engineer Intern
+
+Worked on authentication, API optimization, and relational database/query optimization in a React and Django REST Framework application.
 
 ## 🧰 Toolbox
 
@@ -156,12 +165,10 @@ Worked with React, Django, Django REST Framework, authentication, API optimizati
 
 ## Education & Recognition
 
-**George Mason University**  
-M.S. Information Systems · Graduated May 2026  
-**🏆 Academic Excellence Award · 3.97 / 4.0 GPA**
+**George Mason University · M.S. Information Systems · May 2026**  
+🏆 **Academic Excellence Award · 3.97 / 4.0 GPA**
 
-**Anna University**  
-B.Tech Information Technology
+**Anna University · B.Tech Information Technology**
 
 ---
 
