@@ -10,12 +10,12 @@
   &nbsp; / &nbsp;
   <a href="mailto:aruthra.sathish@gmail.com"><strong>Email</strong></a>
   &nbsp; / &nbsp;
-  <a href="#selected-systems"><strong>Selected systems</strong></a>
+  <a href="#featured-projects"><strong>Featured projects</strong></a>
   &nbsp; / &nbsp;
   <a href="#research"><strong>Research</strong></a>
 </p>
 
-## About me
+## About Me
 
 I’m a **Software Engineer working at the intersection of backend systems, distributed computing, and applied AI/ML**. I build applications that connect real-time data, backend services, and machine learning.
 
@@ -24,106 +24,64 @@ I’m a **Software Engineer working at the intersection of backend systems, dist
 - **🎓 Academic recognition:** M.S. Information Systems from **George Mason University**, with a **3.97/4.0 GPA and the Academic Excellence Award**.
 - **🤝 Opportunities:** Interested in **Software Engineering, Backend & Distributed Systems, AI Engineering, and ML Systems** roles.
 
-## Selected systems
+## Featured Projects
 
 <table>
 <tr>
-<td>
-
-**01 / INCIDENT RESPONSE**
+<td width="50%" valign="top">
 
 ### [WatchTower](https://github.com/aruthrasathish/Watchtower-MCP-server-for-incident-response)
+**AI-assisted incident response**
 
-**From operational evidence to controlled Kubernetes remediation.**
+Connects **12 MCP tools across 4 data sources** to investigate incidents and rank suspects. An **HMAC-SHA256 approval broker** gates Kubernetes remediation.
 
-An AI-assisted investigation platform that connects operational data, ranks suspects, and places an **HMAC-SHA256 approval broker** between investigation and remediation.
+**~83% less triage time in simulated incidents.**
 
-<table>
-<tr>
-<th align="left">Investigation interface</th>
-<th align="left">Evidence collection</th>
-<th align="left">Simulated triage</th>
-</tr>
-<tr>
-<td><strong>12 MCP tools</strong></td>
-<td><strong>4 data sources</strong></td>
-<td><strong>~83% less time</strong></td>
-</tr>
-</table>
-
-**Engineering focus:** Connecting AI-assisted investigation to an explicit approval boundary for Kubernetes operations.
-
-Python · MCP · Kubernetes · PostgreSQL · TimescaleDB · pgvector
-
-[**Inspect the implementation →**](https://github.com/aruthrasathish/Watchtower-MCP-server-for-incident-response)
+Python · MCP · Kubernetes · PostgreSQL · pgvector
 
 </td>
-</tr>
-</table>
-
-<table>
-<tr>
 <td width="50%" valign="top">
-
-**02 / STREAM PROCESSING**
 
 ### [Real-Time Search Ranking](https://github.com/aruthrasathish/Real-time-Search-Ranking-System)
+**Event-driven ranking infrastructure**
 
-**Continuously updated rankings. Separate request serving.**
+Processes clickstream events through **Kafka and Flink**, aggregates clicks in **30-second windows**, and serves rankings from **Redis sorted sets** through Node.js APIs.
 
-Kafka ingests clickstream events. Flink aggregates clicks in **30-second windows**. Redis sorted sets maintain rankings for Node.js APIs.
+**Separates stream computation from request serving.**
 
-**Engineering focus:** Deterministic ranking, asynchronous computation, and tiered caching.
+Kafka · Flink · Redis · Node.js
 
-Kafka · Apache Flink · Redis · Node.js
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-[**Inspect the pipeline →**](https://github.com/aruthrasathish/Real-time-Search-Ranking-System)
+### [SpeakUp](https://github.com/aruthrasathish/anonymous-voice-QA-platform)
+**Real-time anonymous voice Q&A**
+
+Decouples voice processing through **Kafka** from live **WebSocket** interaction. Groq Whisper enables transcription across **99+ languages**.
+
+**Designed for 500+ concurrent users per room.**
+
+Next.js · Fastify · Kafka · Redis · PostgreSQL
 
 </td>
 <td width="50%" valign="top">
 
-**03 / RETRIEVAL & INFERENCE**
-
 ### [USDA AI Assistant](https://github.com/aruthrasathish/usda-chatbot)
+**Retrieval-augmented program discovery**
 
-**176 federal programs. Retrieval-augmented discovery.**
+Makes **176 federal programs** searchable through **BGE embeddings, FAISS retrieval, and Mistral 7B** generation.
 
-BGE embeddings and FAISS retrieval connect program information to Mistral 7B generation.
+**~90s → 8s response latency in project measurements.**
 
-**Project measurements:** Response latency reduced from **~90s to 8s**; automated **11+ hours of scraping work**.
-
-FastAPI · PostgreSQL · FAISS · LlamaIndex · Mistral 7B
-
-[**Inspect the implementation →**](https://github.com/aruthrasathish/usda-chatbot)
+FastAPI · PostgreSQL · FAISS · LlamaIndex
 
 </td>
 </tr>
 </table>
 
-<details>
-<summary><strong>More engineering / voice infrastructure, authentication, and sequence modeling</strong></summary>
-
-<br>
-
-### [SpeakUp](https://github.com/aruthrasathish/anonymous-voice-QA-platform)
-
-Anonymous voice Q&A with **Kafka-backed voice processing and WebSocket interaction**. Designed for **500+ concurrent users per room**; the project README reports **sub-100ms real-time updates**. Groq Whisper supports transcription across **99+ languages**.
-
-Next.js · Fastify · Kafka · WebSockets · Redis · PostgreSQL · Groq Whisper
-
-### [CareerLens](https://github.com/aruthrasathish/job-application-tracker)
-
-Application analytics across a web application and Chrome extension. Connects **Google OAuth and cross-origin JWT authentication** to **21 REST endpoints** for application tracking, funnel analytics, and burnout detection.
-
-React · FastAPI · PostgreSQL · Google OAuth · JWT · Chrome Extension
-
-### [Academic Performance Intelligence](https://github.com/aruthrasathish/academic-performance-predictor-CNN-GRU)
-
-PyTorch sequence-model experiments tracked with MLflow. Reported results distinguish **88.9% classification accuracy for GRU v1** from **7.40-point grade-prediction MAE for CNN-GRU v2**.
-
-PyTorch · CNN · GRU · Attention · Pandas · MLflow
-
-</details>
+**Also built:** [CareerLens — application analytics](https://github.com/aruthrasathish/job-application-tracker) · [Academic Performance Intelligence — sequence modeling](https://github.com/aruthrasathish/academic-performance-predictor-CNN-GRU)
 
 ## Research
 
@@ -185,7 +143,7 @@ Ongoing research directions include counterfactual learning and scalable NLP exp
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-168B6A?style=flat)
 
-## Professional experience
+## Professional Experience
 
 **AI/ML Research Intern · American University · 2026–Present**  
 CAM-Soft research involving language models, embeddings, parameter-efficient adaptation, and cross-dataset evaluation.
@@ -196,7 +154,7 @@ IT 207 — Server-Side Development. Taught backend programming, Node.js, REST AP
 **Software Engineer Intern · Verzeo Edutech**  
 Worked with React, Django, Django REST Framework, authentication, API optimization, and relational databases.
 
-## Education & recognition
+## Education & Recognition
 
 **George Mason University**  
 M.S. Information Systems · Graduated May 2026  
