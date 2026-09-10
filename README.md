@@ -21,6 +21,7 @@ I’m a **Software Engineer focused on backend systems, distributed computing, a
 
 Currently conducting **AI/ML research at American University** and seeking **early-career Software Engineer, AI Engineer, and ML Engineer roles**.
 
+<a name="projects"></a>
 ## 🚀 Featured Projects
 
 ### [WatchTower](https://github.com/aruthrasathish/Watchtower-MCP-server-for-incident-response)
@@ -56,7 +57,7 @@ Built a **dual-pathway implicit hate speech system** in PyTorch, harmonizing **1
 
 **Implemented:** A cached **Llama-3.1-8B reasoning pipeline over 140,727 posts**, an interpretation gate for noisy outputs, and **multi-head cross-attention** to fuse six complementary signals.
 
-Fine-tuned **NV-Embed-v2 with PEFT LoRA**, training **6.8M adapter parameters** with the backbone frozen. Reported evaluation results include **0.835 macro-F1 across five benchmarks** and a **CAD macro-F1 improvement from 0.7504 to 0.7854** with implicature-gap and camouflage scoring plus fusion.
+Established a **LoRA-adapted NV-Embed-v2 baseline averaging 0.835 macro-F1 across five benchmarks**, excluding ToxiGen. Subsequent gap/camouflage modeling and cross-attention fusion improved **CAD macro-F1 from 0.7504 to 0.7854** and reduced **benign-identity false positives from 30.5% to 24.0%**, while evaluation revealed regressions on four other benchmarks.
 
 ### George Mason University · Graduate Teaching Assistant
 **Aug 2025 - May 2026 · IT 207 - Server-Side Development**
@@ -66,7 +67,7 @@ Taught backend programming, REST APIs, SQL, and debugging. Helped students imple
 ### Verzeo Edutech · Software Engineer Intern
 **Dec 2022 - Jan 2023**
 
-Worked on authentication, API optimization, and relational database/query optimization in a React and Django REST Framework application.
+Reworked **Django REST Framework data-access paths** and optimized relational database queries, reducing **redundant API calls by 40%** and **heavy-query latency by 35%**.
 
 ## 🧰 Toolbox
 
