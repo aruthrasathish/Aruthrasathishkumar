@@ -10,18 +10,18 @@
   &nbsp; / &nbsp;
   <a href="mailto:aruthra.sathish@gmail.com"><strong>Email</strong></a>
   &nbsp; / &nbsp;
-  <a href="#featured-projects"><strong>Featured projects</strong></a>
+  <a href="#-featured-projects"><strong>Featured projects</strong></a>
   &nbsp; / &nbsp;
-  <a href="#research--experience"><strong>Research & Experience</strong></a>
+  <a href="#-research--experience"><strong>Experience</strong></a>
 </p>
 
-## About Me
+## 👋 About Me
 
 I’m a **Software Engineer focused on backend systems, distributed computing, and applied AI/ML**. My projects span approval-gated incident response, real-time ranking, asynchronous voice processing, and retrieval-augmented applications.
 
 Currently conducting **AI/ML research at American University**. Seeking **early-career Software Engineer, AI Engineer, and ML Engineer opportunities**.
 
-## Featured Projects
+## 🚀 Featured Projects
 
 <table>
 <tr>
@@ -84,7 +84,7 @@ FastAPI · PostgreSQL · FAISS · LlamaIndex
 
 [**Explore more projects across software systems and applied AI →**](https://github.com/aruthrasathish?tab=repositories)
 
-## Research & Experience
+## 🔬 Research & Experience
 
 ### American University · AI/ML Research Intern
 **2026–Present · CAM-Soft**
@@ -94,7 +94,7 @@ Investigating soft hate speech whose meaning depends on context and implication.
 Ongoing research directions include counterfactual learning and scalable NLP experimentation.
 
 ### George Mason University · Graduate Teaching Assistant
-**IT 207 — Server-Side Development**
+**IT 207 - Server-Side Development**
 
 Taught backend programming, REST APIs, SQL, and debugging. Supported students in implementing server-side applications with Node.js and MySQL.
 
@@ -163,7 +163,7 @@ IT 207 — Server-Side Development. Taught backend programming, Node.js, REST AP
 **Software Engineer Intern · Verzeo Edutech**  
 Worked with React, Django, Django REST Framework, authentication, API optimization, and relational databases.
 
-## Education & Recognition
+## 🎓 Education & Recognition
 
 **George Mason University · M.S. Information Systems · May 2026**  
 🏆 **Academic Excellence Award · 3.97 / 4.0 GPA**
