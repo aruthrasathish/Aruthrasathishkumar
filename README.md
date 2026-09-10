@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/aruthrasathish/"><strong>LinkedIn</strong></a>
+  <a href="https://www.linkedin.com/in/aruthra-sathish-kumar369/"><strong>LinkedIn</strong></a>
   &nbsp; / &nbsp;
   <a href="mailto:aruthra.sathish@gmail.com"><strong>Email</strong></a>
   &nbsp; / &nbsp;
