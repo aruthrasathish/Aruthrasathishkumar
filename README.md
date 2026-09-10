@@ -10,95 +10,59 @@
   &nbsp; / &nbsp;
   <a href="mailto:aruthra.sathish@gmail.com"><strong>Email</strong></a>
   &nbsp; / &nbsp;
-  <a href="#-featured-projects"><strong>Featured projects</strong></a>
+  <a href="#projects"><strong>Projects</strong></a>
   &nbsp; / &nbsp;
-  <a href="#-research--experience"><strong>Experience</strong></a>
+  <a href="#experience"><strong>Experience</strong></a>
 </p>
 
 ## 👋 About Me
 
-I’m a **Software Engineer focused on backend systems, distributed computing, and applied AI/ML**. My projects span approval-gated incident response, real-time ranking, asynchronous voice processing, and retrieval-augmented applications.
+I’m a **Software Engineer focused on backend systems, distributed computing, and applied AI/ML**. I build real-time applications, investigate system performance, and connect AI capabilities to practical software workflows.
 
-Currently conducting **AI/ML research at American University**. Seeking **early-career Software Engineer, AI Engineer, and ML Engineer opportunities**.
+Currently conducting **AI/ML research at American University** and seeking **early-career Software Engineer, AI Engineer, and ML Engineer roles**.
 
 ## 🚀 Featured Projects
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
 ### [WatchTower](https://github.com/aruthrasathish/Watchtower-MCP-server-for-incident-response)
-
-**AI-assisted investigation. Approval-gated remediation.**
-
-Connects **12 MCP tools across 4 data sources** to investigate incidents and rank suspects. An **HMAC-SHA256 approval broker** controls Kubernetes remediation.
-
-**Result:** ~83% less triage time in simulated incidents.
+AI-assisted incident investigation through **12 MCP tools and 4 data sources**, with an **HMAC-SHA256 approval broker** gating Kubernetes remediation. **~83% less triage time in simulated incidents.**
 
 Python · MCP · Kubernetes · PostgreSQL · pgvector
 
-</td>
-<td width="50%" valign="top">
-
 ### [Real-Time Search Ranking](https://github.com/aruthrasathish/Real-time-Search-Ranking-System)
+A **Kafka → Flink → Redis → Node.js** ranking pipeline that processes clickstream events in **30-second windows** and separates asynchronous stream computation from request serving.
 
-**Clickstream processing with independent request serving.**
-
-Kafka ingests events; Flink aggregates clicks in **30-second windows**; Redis sorted sets maintain rankings for Node.js APIs.
-
-**Design:** Deterministic ranking with asynchronous computation and tiered caching.
-
-Kafka · Flink · Redis · Node.js
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+Kafka · Apache Flink · Redis · Node.js
 
 ### [SpeakUp](https://github.com/aruthrasathish/anonymous-voice-QA-platform)
+Real-time anonymous voice Q&A that separates **Kafka-backed voice processing** from **WebSocket interaction**. Supports transcription across **99+ languages** and is designed for **500+ concurrent users per room**.
 
-**Asynchronous voice processing. Real-time interaction.**
-
-Separates **Kafka-backed voice processing** from live **WebSocket** updates. Groq Whisper supports transcription across **99+ languages**.
-
-**Capacity target:** Designed for 500+ concurrent users per room.
-
-Next.js · Fastify · Kafka · Redis · PostgreSQL
-
-</td>
-<td width="50%" valign="top">
+Next.js · Fastify · Kafka · WebSockets · Redis · PostgreSQL
 
 ### [USDA AI Assistant](https://github.com/aruthrasathish/usda-chatbot)
+Retrieval-augmented discovery across **176 federal programs**, using BGE embeddings, FAISS, and Mistral 7B. Reduced response latency from **~90s to 8s in project measurements**.
 
-**Federal-program discovery through retrieval and inference.**
+FastAPI · PostgreSQL · FAISS · LlamaIndex · Mistral 7B
 
-Makes **176 federal programs** searchable using BGE embeddings, FAISS retrieval, and Mistral 7B generation.
+**More to explore:** I’ve built other projects across software systems and applied AI. [Explore my repositories →](https://github.com/aruthrasathish?tab=repositories)
 
-**Result:** ~90s → 8s response latency in project measurements.
-
-FastAPI · PostgreSQL · FAISS · LlamaIndex
-
-</td>
-</tr>
-</table>
-
-[**Explore more projects across software systems and applied AI →**](https://github.com/aruthrasathish?tab=repositories)
+<a name="experience"></a>
 
 ## 🔬 Research & Experience
 
 ### American University · AI/ML Research Intern
-**2026 - Present · CAM-Soft**
+**[Jul 2026] - [Present] · CAM-Soft**
 
 Investigating soft hate speech whose meaning depends on context and implication. Working with **Llama 3.1 8B, transformer embeddings, LoRA/PEFT, and cross-dataset evaluation** using PyTorch and Hugging Face.
 
 Ongoing research directions include counterfactual learning and scalable NLP experimentation.
 
 ### George Mason University · Graduate Teaching Assistant
-**IT 207 - Server-Side Development**
+**[Aug 2025] - [May 2026] · IT 207 - Server-Side Development**
 
-Taught backend programming, REST APIs, SQL, and debugging. Supported students in implementing server-side applications with Node.js and MySQL.
+Taught backend programming, REST APIs, SQL, and debugging. Helped students implement server-side applications with Node.js and MySQL.
 
 ### Verzeo Edutech · Software Engineer Intern
+**[Dec 2022] - [Jan 2023]**
 
 Worked on authentication, API optimization, and relational database/query optimization in a React and Django REST Framework application.
 
