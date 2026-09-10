@@ -50,25 +50,17 @@ FastAPI · PostgreSQL · FAISS · LlamaIndex · Mistral 7B
 
 ## 🔬 Research & Experience
 
-### American University · AI/ML Research Intern
-**Jul 2026 - Present · CAM-Soft**
+- **AI/ML Research Intern · American University**  
+  *Jul 2026 – Present · CAM-Soft*  
+  Built an implicit hate speech detection system using **PyTorch, LoRA-adapted embeddings, and Llama-derived interpretations**, combining literal and implied meaning across **147K posts from seven benchmarks**.
 
-Built a **dual-pathway implicit hate speech system** in PyTorch, harmonizing **147K posts across seven benchmarks** and learning separate literal and Llama-derived implied representations.
+- **Graduate Teaching Assistant · George Mason University**  
+  *Aug 2025 – May 2026 · IT 207 - Server-Side Development*  
+  Taught backend development with **Node.js, REST APIs, and MySQL**, helping students build and debug server-side applications.
 
-**Implemented:** A cached **Llama-3.1-8B reasoning pipeline over 140,727 posts**, an interpretation gate for noisy outputs, and **multi-head cross-attention** to fuse six complementary signals.
-
-Established a **LoRA-adapted NV-Embed-v2 baseline averaging 0.835 macro-F1 across five benchmarks**, excluding ToxiGen. Subsequent gap/camouflage modeling and cross-attention fusion improved **CAD macro-F1 from 0.7504 to 0.7854** and reduced **benign-identity false positives from 30.5% to 24.0%**, while evaluation revealed regressions on four other benchmarks.
-
-### George Mason University · Graduate Teaching Assistant
-**Aug 2025 - May 2026 · IT 207 - Server-Side Development**
-
-Taught backend programming, REST APIs, SQL, and debugging. Helped students implement server-side applications with Node.js and MySQL.
-
-### Verzeo Edutech · Software Engineer Intern
-**Dec 2022 - Jan 2023**
-
-Reworked **Django REST Framework data-access paths** and optimized relational database queries, reducing **redundant API calls by 40%** and **heavy-query latency by 35%**.
-
+- **Software Engineer Intern · Verzeo Edutech**  
+  *Dec 2022 – Jan 2023*  
+  Optimized **Django REST Framework data access and SQL queries**, reducing redundant API calls by **40%** and heavy-query latency by **35%**.
 ## 🧰 Toolbox
 
 **Programming Languages:**
@@ -76,16 +68,25 @@ Reworked **Django REST Framework data-access paths** and optimized relational da
 ![Java](https://img.shields.io/badge/Java-E68A00?style=flat&logo=openjdk&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=cplusplus&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-512BD4?style=flat)
 ![SQL](https://img.shields.io/badge/SQL-336791?style=flat&logo=postgresql&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
-**Backend & APIs:**
+**Frameworks & Libraries:**
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat&logo=angular&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=nodedotjs&logoColor=white)
 ![Fastify](https://img.shields.io/badge/Fastify-202020?style=flat&logo=fastify&logoColor=white)
 ![REST APIs](https://img.shields.io/badge/REST_APIs-2563EB?style=flat)
 ![WebSockets](https://img.shields.io/badge/WebSockets-6D28D9?style=flat)
+![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=flat)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat&logo=graphql&logoColor=white)
 
 **Distributed Systems & Data:**
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white)
@@ -121,6 +122,7 @@ Reworked **Django REST Framework data-access paths** and optimized relational da
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-168B6A?style=flat)
 
 
