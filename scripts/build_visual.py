@@ -118,7 +118,7 @@ def render(dark=False, mobile=False):
         text(28, 91, "Aruthra", 43, weight=700)
         text(28, 138, "Sathish Kumar", 43, weight=700)
 
-        line("M28 160H83", c["teal"], 3)
+        line("M28 160H321", c["teal"], 3)
         text(28, 194, "Software Engineer", 21, weight=600)
         text(28, 224, "Backend & Distributed Systems", 14, c["muted"])
         text(28, 247, "Applied AI / ML", 14, c["muted"])
@@ -200,7 +200,7 @@ def render(dark=False, mobile=False):
         text(36, 107, "Aruthra", 49, weight=700)
         text(36, 161, "Sathish Kumar", 49, weight=700)
 
-        line("M36 185H96", c["teal"], 3)
+        line("M36 185H370", c["teal"], 3)
         text(36, 221, "Software Engineer", 23, weight=600)
         text(36, 251, "Backend & Distributed Systems",
              14, c["muted"])
