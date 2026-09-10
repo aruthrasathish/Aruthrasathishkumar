@@ -87,7 +87,7 @@ FastAPI · PostgreSQL · FAISS · LlamaIndex
 ## 🔬 Research & Experience
 
 ### American University · AI/ML Research Intern
-**2026–Present · CAM-Soft**
+**2026 - Present · CAM-Soft**
 
 Investigating soft hate speech whose meaning depends on context and implication. Working with **Llama 3.1 8B, transformer embeddings, LoRA/PEFT, and cross-dataset evaluation** using PyTorch and Hugging Face.
 
@@ -158,7 +158,7 @@ Worked on authentication, API optimization, and relational database/query optimi
 **George Mason University · M.S. Information Systems · May 2026**  
 🏆 **Academic Excellence Award · 3.97 / 4.0 GPA**
 
-**Anna University · B.Tech Information Technology**
+**Anna University · B.Tech Information Technology · May 2024** 
 
 ---
 
