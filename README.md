@@ -17,7 +17,7 @@
 
 ## 👋 About Me
 
-I’m a **Software Engineer focused on backend systems, distributed computing, and applied AI/ML**. I build event-driven backends and AI applications—from real-time ranking and voice processing to incident investigation and language-model research.
+I’m a **Software Engineer focused on backend systems, distributed computing, and applied AI/ML**. I build event-driven backends and AI applications, from real-time ranking and voice processing to incident investigation and language-model research.
 
 Currently conducting **AI/ML research at American University** and seeking **early-career Software Engineer, AI Engineer, and ML Engineer roles**.
 
